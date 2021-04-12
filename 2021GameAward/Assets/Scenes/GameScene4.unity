@@ -3231,7 +3231,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1339319214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3256,12 +3256,12 @@ MonoBehaviour:
   lever: {fileID: 0}
   leverblock: {fileID: 0}
   leverblock2: {fileID: 0}
-  valve: {fileID: 0}
-  valveblock: {fileID: 0}
-  valve2: {fileID: 0}
-  valveblock2: {fileID: 0}
-  valve3: {fileID: 0}
-  valveblock3: {fileID: 0}
+  valve: {fileID: 1509463369}
+  valveblock: {fileID: 4840405}
+  valve2: {fileID: 629027370}
+  valveblock2: {fileID: 787660096}
+  valve3: {fileID: 878667167}
+  valveblock3: {fileID: 1146886319}
   getValve: 0
   getValve2: 0
   getValve3: 0
@@ -3705,7 +3705,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509463369}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
