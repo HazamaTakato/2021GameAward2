@@ -192,9 +192,9 @@ public class Sphere : MonoBehaviour
         //{
         //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //}
-        if (other.tag == "Goal" && GetItem)
+        if (other.tag == "Goal" &&GetItem)
         {
-            SceneManager.LoadScene("GameScene2");
+            SceneManager.LoadScene("GameScene3");
         }
     }
 

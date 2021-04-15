@@ -1198,8 +1198,28 @@ MonoBehaviour:
   normal: {fileID: 1208882271}
   hitflag: 0
   changeSize: 0
+  fallblock: {fileID: 0}
   lever: {fileID: 954817801}
   leverblock: {fileID: 25606475}
+  leverblock2: {fileID: 0}
+  valve: {fileID: 0}
+  valveblock: {fileID: 0}
+  valve2: {fileID: 0}
+  valveblock2: {fileID: 0}
+  valve3: {fileID: 0}
+  valveblock3: {fileID: 0}
+  lever2: {fileID: 0}
+  lever2block: {fileID: 0}
+  lever3: {fileID: 0}
+  lever3block: {fileID: 0}
+  valve4: {fileID: 0}
+  valveblock4: {fileID: 0}
+  getValve: 0
+  getValve2: 0
+  getValve3: 0
+  getValve4: 0
+  leverON: 0
+  lever2ON: 0
 --- !u!114 &547695197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,6 +1241,8 @@ MonoBehaviour:
   hitflag: 0
   changeSize: 0
   changeGauge: {fileID: 0}
+  Gauge: 0
+  block2: []
 --- !u!4 &547695198
 Transform:
   m_ObjectHideFlags: 0
@@ -1229,7 +1251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547695194}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.76, y: 7.38, z: 0.1}
+  m_LocalPosition: {x: -11.77, y: 0.04, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1433947789}

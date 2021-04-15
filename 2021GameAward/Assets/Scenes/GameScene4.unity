@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 79973358}
   m_Layer: 0
   m_Name: Valve
-  m_TagString: valve
+  m_TagString: valve4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,7 +241,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79973357}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 165412885}
   m_Layer: 0
   m_Name: LeverSeitch (2)
-  m_TagString: block
+  m_TagString: lever2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -334,7 +334,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165412884}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1251,7 +1251,7 @@ GameObject:
   - component: {fileID: 629027371}
   m_Layer: 0
   m_Name: Valve (2)
-  m_TagString: valve
+  m_TagString: valve2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1264,7 +1264,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629027370}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1799,7 +1799,7 @@ GameObject:
   - component: {fileID: 878667168}
   m_Layer: 0
   m_Name: Valve (1)
-  m_TagString: valve
+  m_TagString: valve3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1812,7 +1812,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878667167}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2915,7 +2915,7 @@ GameObject:
   - component: {fileID: 1166662687}
   m_Layer: 0
   m_Name: LeverSeitch (3)
-  m_TagString: block
+  m_TagString: lever3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2928,7 +2928,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166662686}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -3252,20 +3252,28 @@ MonoBehaviour:
   normal: {fileID: 1541441240}
   hitflag: 0
   changeSize: 0
-  fallblock: {fileID: 0}
-  lever: {fileID: 0}
-  leverblock: {fileID: 0}
-  leverblock2: {fileID: 0}
+  fallblock: {fileID: 754772331}
+  lever: {fileID: 1937171506}
+  leverblock: {fileID: 1478390926}
+  leverblock2: {fileID: 541511283}
   valve: {fileID: 1509463369}
   valveblock: {fileID: 4840405}
   valve2: {fileID: 629027370}
   valveblock2: {fileID: 787660096}
   valve3: {fileID: 878667167}
-  valveblock3: {fileID: 1146886319}
+  valveblock3: {fileID: 220164543}
+  lever2: {fileID: 165412884}
+  lever2block: {fileID: 985583425}
+  lever3: {fileID: 1166662686}
+  lever3block: {fileID: 1146886319}
+  valve4: {fileID: 79973357}
+  valveblock4: {fileID: 204440244}
   getValve: 0
   getValve2: 0
   getValve3: 0
+  getValve4: 0
   leverON: 0
+  lever2ON: 0
 --- !u!114 &1339319215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3297,7 +3305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339319212}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.09, y: 10, z: 0.1}
+  m_LocalPosition: {x: 13.35, y: -0.05, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1598318067}
@@ -4529,7 +4537,7 @@ GameObject:
   - component: {fileID: 1937171507}
   m_Layer: 0
   m_Name: LeverSeitch (1)
-  m_TagString: block
+  m_TagString: lever
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4542,7 +4550,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937171506}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

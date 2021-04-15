@@ -16,6 +16,8 @@ public class PlayerItem : MonoBehaviour
     Vector2 MyPosition;
     Vector2 ItemdropPosition;
 
+    Sphere player;
+
     public bool GetItem = false;
     public bool DropItem = false;
 
@@ -25,6 +27,8 @@ public class PlayerItem : MonoBehaviour
         Item = GameObject.Find("Item");
         NormalPlayer = GameObject.Find("normalPlayer");
         OverPlayer = GameObject.Find("OverPlayer");
+
+        player = GetComponent<Sphere>();
 
         ItemRigid = Item.GetComponent<Rigidbody>();
         PlayerRigid = GetComponent<Rigidbody>();
@@ -50,16 +54,33 @@ public class PlayerItem : MonoBehaviour
                 DropItem = false;
             }
         }
+        if (player.GetItem)
+        {
+            Item.transform.position = new Vector3(MyPosition.x, MyPosition.y, -7);
+            if (DropItem)
+            {
+                Item.transform.position = new Vector3(
+                    Item.transform.position.x + (MyScale.x * (PlayerRigid.velocity.x > 0.0000001f ? -1 : 1)),
+                    Item.transform.position.y + MyScale.y / 3, 0);
+                ItemRigid.velocity = -PlayerRigid.velocity / 5;
+                player.GetItem = false;
+                GetItem = false;
+                DropItem = false;
+            }
+        }
     }
     private void OnCollisionStay(Collision other)
     {
         if (GetItem)
             return;
+        if (player.GetItem)
+            return;
         if (other.gameObject == Item)
         {
-            Debug.Log("アイテムに当たった");
+            //Debug.Log("アイテムに当たった");
             if (MyScale.x / 1.7f >= Item.transform.localScale.x&&!GetItem)
             {
+                player.GetItem = true;
                 GetItem = true;
                 MyScale = new Vector3(Item.transform.localScale.x + 0.8f, Item.transform.localScale.y + 0.8f,1);
                 NormalPlayer.transform.localScale = MyScale;
@@ -71,7 +92,8 @@ public class PlayerItem : MonoBehaviour
     {
         if (other.tag == "Goal" && GetItem)
         {
-            SceneManager.LoadScene("GameScene2");
+            Debug.Log("ゴールに当たった");
+            SceneManager.LoadScene("GameScene3");
         }
     }
 }

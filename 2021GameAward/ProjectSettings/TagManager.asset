@@ -13,6 +13,9 @@ TagManager:
   - valve
   - valve2
   - valve3
+  - lever2
+  - lever3
+  - valve4
   layers:
   - Default
   - TransparentFX
