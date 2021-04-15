@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 715814232}
   - component: {fileID: 715814233}
   - component: {fileID: 715814234}
+  - component: {fileID: 715814235}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1007,7 +1008,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &715814234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,6 +1024,19 @@ MonoBehaviour:
   MyScale: {x: 0, y: 0, z: 0}
   GetItem: 0
   DropItem: 0
+--- !u!114 &715814235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715814230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e5d63da8eaa524fa645883bd8f8ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 804744931}
 --- !u!1 &782244385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1130,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &804744931 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5268750962031756966, guid: f992ea3d1a4d34c45aeb712551dc2392,
+    type: 3}
+  m_PrefabInstance: {fileID: 5268750963085309328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &882120767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1998847737}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.97, y: 0.59, z: -1.1862026}
+  m_LocalPosition: {x: 26.97, y: 0.04, z: -1.1862026}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2099,10 +2119,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5268750961648660048, guid: f992ea3d1a4d34c45aeb712551dc2392,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5268750962031756966, guid: f992ea3d1a4d34c45aeb712551dc2392,
         type: 3}
       propertyPath: m_Name
       value: PauseUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268750962031756966, guid: f992ea3d1a4d34c45aeb712551dc2392,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5268750962031756970, guid: f992ea3d1a4d34c45aeb712551dc2392,
         type: 3}

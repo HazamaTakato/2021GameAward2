@@ -1307,6 +1307,7 @@ GameObject:
   - component: {fileID: 547695196}
   - component: {fileID: 547695195}
   - component: {fileID: 547695199}
+  - component: {fileID: 547695200}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1355,6 +1356,7 @@ MonoBehaviour:
   changeGauge: {fileID: 83580194}
   Gauge: 0
   leverON: 0
+  block2: []
 --- !u!114 &547695197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1409,6 +1411,19 @@ MonoBehaviour:
   MyScale: {x: 0, y: 0, z: 0}
   GetItem: 0
   DropItem: 0
+--- !u!114 &547695200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547695194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e5d63da8eaa524fa645883bd8f8ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseUI: {fileID: 1521452767}
 --- !u!1 &650399720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2638,6 +2653,12 @@ Transform:
   m_Father: {fileID: 547695198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1521452767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5268750962031756966, guid: f992ea3d1a4d34c45aeb712551dc2392,
+    type: 3}
+  m_PrefabInstance: {fileID: 1929161977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1534446213
 GameObject:
   m_ObjectHideFlags: 0
@@ -3304,7 +3325,7 @@ PrefabInstance:
     - target: {fileID: 5268750962031756966, guid: f992ea3d1a4d34c45aeb712551dc2392,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5268750962031756970, guid: f992ea3d1a4d34c45aeb712551dc2392,
         type: 3}
