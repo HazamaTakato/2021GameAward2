@@ -192,7 +192,7 @@ public class SphereStage2 : MonoBehaviour
         //}
         if (other.tag == "Goal" && GetItem)
         {
-            SceneManager.LoadScene("EndingScene");
+            SceneManager.LoadScene("GameScene4");
         }
         if(other.tag=="lever")
         {
