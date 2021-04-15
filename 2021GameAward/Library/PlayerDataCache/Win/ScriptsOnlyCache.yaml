@@ -2,8 +2,14 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - EndingScene
+    - Pause
+    - PlayerCamera
+    - PlayerItem
+    - PlayerItemStage2
+    - PlayerItemStage3
     - Sphere
     - SphereStage2
+    - SphereStage3
     - TItleScene
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -15,12 +21,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -30,6 +30,8 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/EndingScene.unity:
@@ -56,11 +58,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 13626}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 14252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -105,8 +107,30 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13776}
+      Script: {instanceID: 11170}
+    - Class: 114
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 12172}
+    - Class: 114
+      Script: {instanceID: 12336}
+    - Class: 114
+      Script: {instanceID: 13284}
+    - Class: 114
+      Script: {instanceID: 13632}
+    - Class: 114
+      Script: {instanceID: 13782}
+    - Class: 114
+      Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 14252}
+    - Class: 114
+      Script: {instanceID: 14294}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -114,7 +138,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 196
       Script: {instanceID: 0}
-    Assets/Scenes/GameScene2.unity:
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/GameScene3.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -144,16 +176,107 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11170}
+    - Class: 114
       Script: {instanceID: 11346}
     - Class: 114
-      Script: {instanceID: 13776}
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 12336}
+    - Class: 114
+      Script: {instanceID: 13632}
+    - Class: 114
+      Script: {instanceID: 13782}
+    - Class: 114
+      Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 14152}
+    - Class: 114
+      Script: {instanceID: 14294}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/GameScene4.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11170}
+    - Class: 114
+      Script: {instanceID: 11458}
+    - Class: 114
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 12336}
+    - Class: 114
+      Script: {instanceID: 13232}
+    - Class: 114
+      Script: {instanceID: 13632}
+    - Class: 114
+      Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 14118}
+    - Class: 114
+      Script: {instanceID: 14294}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/TItleScene.unity:
     - Class: 1
@@ -179,11 +302,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 13074}
+      Script: {instanceID: 13076}
     - Class: 114
-      Script: {instanceID: 13626}
+      Script: {instanceID: 13632}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 14252}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,7 +348,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 6350606f0e99308bad376d4dcc1a9ddb
+      Hash: 01532d13e7e900aaaf0c6901ddf9d174
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SphereStage2
@@ -429,6 +552,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerCamera
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -531,6 +660,12 @@ ScriptsOnlyBuild:
     className: SpriteLibraryAsset
   - hash:
       serializedVersion: 2
+      Hash: edfc43291a5ed729c1472b0deff54b16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SphereStage3
+  - hash:
+      serializedVersion: 2
       Hash: e1300922cc039f41ab46a47f4cb05898
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -547,6 +682,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: ce154c1e898905dbb91c102e9476384e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerItem
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -585,10 +726,16 @@ ScriptsOnlyBuild:
     className: EndingScene
   - hash:
       serializedVersion: 2
-      Hash: 6350606f0e99308bad376d4dcc1a9ddb
+      Hash: c1466d084e6f2029563d5d7b41506425
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Sphere
+  - hash:
+      serializedVersion: 2
+      Hash: 764310837a40c25e0b7a3be858025d63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pause
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -621,6 +768,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: ce154c1e898905dbb91c102e9476384e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerItemStage3
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -631,6 +784,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: ce154c1e898905dbb91c102e9476384e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerItemStage2
   - hash:
       serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
@@ -701,6 +860,7 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/TItleScene.unity
   - Assets/Scenes/GameScene.unity
-  - Assets/Scenes/GameScene2.unity
+  - Assets/Scenes/GameScene3.unity
+  - Assets/Scenes/GameScene4.unity
   - Assets/Scenes/EndingScene.unity
-  playerPath: C:/Users/K018A1407/Desktop/GameAwardEXE/2021GameAward.exe
+  playerPath: C:/Users/K018A1407/Desktop/2021GameAward.exe
