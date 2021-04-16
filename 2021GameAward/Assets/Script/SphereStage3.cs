@@ -52,6 +52,7 @@ public class SphereStage3 : MonoBehaviour
     float keyTimelimit;
 
     public Camera pcamera;
+    public static bool IsGoal = false;
 
     // Start is called before the first frame update
     void Start()
@@ -333,6 +334,7 @@ public class SphereStage3 : MonoBehaviour
         }
         if (other.tag == "Goal" && GetItem)
         {
+            IsGoal = true;
             SceneManager.LoadScene("EndingScene");
         }
         if (other.tag == "lever")
