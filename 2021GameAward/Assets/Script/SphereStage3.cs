@@ -16,28 +16,28 @@ public class SphereStage3 : MonoBehaviour
     Vector3 downaddcutSize;
     public bool hitflag;
     public bool changeSize;
-    public GameObject fallblock;
-    public GameObject lever;
-    public GameObject leverblock;
-    public GameObject leverblock2;
+    //public GameObject fallblock;
+    //public GameObject lever;
+    //public GameObject leverblock;
+    //public GameObject leverblock2;
     public GameObject valve;
     public GameObject valveblock;
     public GameObject valve2;
     public GameObject valveblock2;
     public GameObject valve3;
     public GameObject valveblock3;
-    public GameObject lever2;
-    public GameObject lever2block;
-    public GameObject lever3;
-    public GameObject lever3block;
+    //public GameObject lever2;
+    //public GameObject lever2block;
+    //public GameObject lever3;
+    //public GameObject lever3block;
     public GameObject valve4;
     public GameObject valveblock4;
     public bool getValve;
     public bool getValve2;
     public bool getValve3;
     public bool getValve4;
-    public bool leverON;
-    public bool lever2ON;
+   //public bool leverON;
+   //public bool lever2ON;
     public GameObject button;
     public GameObject buttonblock;
     public bool buttonON;
@@ -214,7 +214,7 @@ public class SphereStage3 : MonoBehaviour
                 valve2.transform.localPosition -= new Vector3(0, 0.004f, 0);
                 valveblock2.transform.localPosition -= new Vector3(0, 0.004f, 0);
             }
-            if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 8.6f)
+            if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 9.6f)
             {
                 valve2.transform.Rotate(0, 0, -0.1f);
                 valve2.transform.localPosition += new Vector3(0, 0.004f, 0);
@@ -224,38 +224,38 @@ public class SphereStage3 : MonoBehaviour
         if (getValve3)
         {
             this.transform.position = valve3.transform.position;
-            if (leverON)
-            {
-                fallblock.transform.localPosition -= new Vector3(0, 0.002f, 0);
-                if (Input.GetKey(KeyCode.D) && valve3.transform.localPosition.y >= 5.0f)
+            //if (leverON)
+            //{
+                //fallblock.transform.localPosition -= new Vector3(0, 0.002f, 0);
+                if (Input.GetKey(KeyCode.D) && valve3.transform.localPosition.y >= 0.5f)
                 {
                     valve3.transform.Rotate(0, 0, 0.1f);
                     valve3.transform.localPosition -= new Vector3(0, 0.004f, 0);
                     valveblock3.transform.localPosition -= new Vector3(0, 0.004f, 0);
                 }
-                if (Input.GetKey(KeyCode.A) && valve3.transform.localPosition.y <= 8.6f)
+                if (Input.GetKey(KeyCode.A) && valve3.transform.localPosition.y <= 9.6f)
                 {
                     valve3.transform.Rotate(0, 0, -0.1f);
                     valve3.transform.localPosition += new Vector3(0, 0.004f, 0);
                     valveblock3.transform.localPosition += new Vector3(0, 0.004f, 0);
                 }
-            }
-            if (lever2ON)
-            {
-                fallblock.SetActive(false);
-                if (Input.GetKey(KeyCode.D) && valve3.transform.localPosition.y >= 3.5f)
-                {
-                    valve3.transform.Rotate(0, 0, 0.1f);
-                    valve3.transform.localPosition -= new Vector3(0, 0.004f, 0);
-                    valveblock3.transform.localPosition -= new Vector3(0, 0.004f, 0);
-                }
-                if (Input.GetKey(KeyCode.A) && valve3.transform.localPosition.y <= 8.6f)
-                {
-                    valve3.transform.Rotate(0, 0, -0.1f);
-                    valve3.transform.localPosition += new Vector3(0, 0.004f, 0);
-                    valveblock3.transform.localPosition += new Vector3(0, 0.004f, 0);
-                }
-            }
+            //}
+            //if (lever2ON)
+            //{
+            //    fallblock.SetActive(false);
+            //    if (Input.GetKey(KeyCode.D) && valve3.transform.localPosition.y >= 3.5f)
+            //    {
+            //        valve3.transform.Rotate(0, 0, 0.1f);
+            //        valve3.transform.localPosition -= new Vector3(0, 0.004f, 0);
+            //        valveblock3.transform.localPosition -= new Vector3(0, 0.004f, 0);
+            //    }
+            //    if (Input.GetKey(KeyCode.A) && valve3.transform.localPosition.y <= 8.6f)
+            //    {
+            //        valve3.transform.Rotate(0, 0, -0.1f);
+            //        valve3.transform.localPosition += new Vector3(0, 0.004f, 0);
+            //        valveblock3.transform.localPosition += new Vector3(0, 0.004f, 0);
+            //    }
+            //}
         }
         if (getValve4)
         {
@@ -337,26 +337,26 @@ public class SphereStage3 : MonoBehaviour
             IsGoal = true;
             SceneManager.LoadScene("EndingScene");
         }
-        if (other.tag == "lever")
-        {
-            leverblock.SetActive(false);
-            leverblock2.SetActive(false);
-            lever.transform.localRotation = new Quaternion(0, 0, 3.5f, 1);
-            leverON = true;
-        }
+        //if (other.tag == "lever")
+        //{
+        //    leverblock.SetActive(false);
+        //    leverblock2.SetActive(false);
+        //    lever.transform.localRotation = new Quaternion(0, 0, 3.5f, 1);
+        //    leverON = true;
+        //}
 
-        if (other.tag == "lever2")
-        {
-            lever2block.SetActive(false);
-            lever2.transform.localRotation = new Quaternion(0, 0, 3.5f, 1);
-            lever2ON = true;
-        }
+        //if (other.tag == "lever2")
+        //{
+        //    lever2block.SetActive(false);
+        //    lever2.transform.localRotation = new Quaternion(0, 0, 3.5f, 1);
+        //    lever2ON = true;
+        //}
 
-        if (other.tag == "lever3")
-        {
-            lever3block.SetActive(false);
-            lever3.transform.localRotation = new Quaternion(0, 0, -3.5f, 1);
-        }
+        //if (other.tag == "lever3")
+        //{
+        //    lever3block.SetActive(false);
+        //    lever3.transform.localRotation = new Quaternion(0, 0, -3.5f, 1);
+        //}
 
         if(other.tag=="lever4")
         {
