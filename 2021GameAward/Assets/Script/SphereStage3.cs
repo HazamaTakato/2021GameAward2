@@ -192,13 +192,13 @@ public class SphereStage3 : MonoBehaviour
         if (getValve)
         {
             this.transform.position = valve.transform.position;
-            if (Input.GetKey(KeyCode.D)||Input.GetKey("joystick button 8") && valve.transform.localPosition.y >= 0.7f)
+            if (Input.GetKey(KeyCode.D)&& valve.transform.localPosition.y >= 0.7f || Input.GetKey("joystick button 8") && valve.transform.localPosition.y >= 0.7f)
             {
                 valve.transform.Rotate(0, 0, 0.1f);
                 valve.transform.localPosition -= new Vector3(0, 0.004f, 0);
                 valveblock.transform.localPosition -= new Vector3(0, 0.004f, 0);
             }
-            if (Input.GetKey(KeyCode.A)||Input.GetKey("joystick button 9") && valve.transform.localPosition.y <= 10.5f)
+            if (Input.GetKey(KeyCode.A)&& valve.transform.localPosition.y <= 10.5f||Input.GetKey("joystick button 9") && valve.transform.localPosition.y <= 10.5f)
             {
                 valve.transform.Rotate(0, 0, -0.1f);
                 valve.transform.localPosition += new Vector3(0, 0.004f, 0);
@@ -208,13 +208,13 @@ public class SphereStage3 : MonoBehaviour
         if (getValve2)
         {
             this.transform.position = valve2.transform.position;
-            if (Input.GetKey(KeyCode.D) || Input.GetKey("joystick button 8") && valve2.transform.localPosition.y >= 0.7f)
+            if (Input.GetKey(KeyCode.D) && valve2.transform.localPosition.y >= 0.7f || Input.GetKey("joystick button 8") && valve2.transform.localPosition.y >= 0.7f)
             {
                 valve2.transform.Rotate(0, 0, 0.1f);
                 valve2.transform.localPosition -= new Vector3(0, 0.004f, 0);
                 valveblock2.transform.localPosition -= new Vector3(0, 0.004f, 0);
             }
-            if (Input.GetKey(KeyCode.A) || Input.GetKey("joystick button 9") && valve2.transform.localPosition.y <= 9.6f)
+            if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 9.6f || Input.GetKey("joystick button 9") && valve2.transform.localPosition.y <= 9.6f)
             {
                 valve2.transform.Rotate(0, 0, -0.1f);
                 valve2.transform.localPosition += new Vector3(0, 0.004f, 0);
@@ -227,14 +227,14 @@ public class SphereStage3 : MonoBehaviour
             //if (leverON)
             //{
                 //fallblock.transform.localPosition -= new Vector3(0, 0.002f, 0);
-                if (Input.GetKey(KeyCode.D) || Input.GetKey("joystick button 8") && valve3.transform.localPosition.y >= 0.5f)
-                {
+                if (Input.GetKey(KeyCode.D)&& valve3.transform.localPosition.y >= 0.5f || Input.GetKey("joystick button 8") && valve3.transform.localPosition.y >= 0.5f)
+            {
                     valve3.transform.Rotate(0, 0, 0.1f);
                     valve3.transform.localPosition -= new Vector3(0, 0.004f, 0);
                     valveblock3.transform.localPosition -= new Vector3(0, 0.004f, 0);
                 }
-                if (Input.GetKey(KeyCode.A) || Input.GetKey("joystick button 9") && valve3.transform.localPosition.y <= 9.6f)
-                {
+                if (Input.GetKey(KeyCode.A)&& valve3.transform.localPosition.y <= 9.6f || Input.GetKey("joystick button 9") && valve3.transform.localPosition.y <= 9.6f)
+            {
                     valve3.transform.Rotate(0, 0, -0.1f);
                     valve3.transform.localPosition += new Vector3(0, 0.004f, 0);
                     valveblock3.transform.localPosition += new Vector3(0, 0.004f, 0);
@@ -260,13 +260,13 @@ public class SphereStage3 : MonoBehaviour
         if (getValve4)
         {
             this.transform.position = valve4.transform.position;
-            if (Input.GetKey(KeyCode.D) || Input.GetKey("joystick button 8") && valve4.transform.localPosition.y >= 0.6f)
+            if (Input.GetKey(KeyCode.D)&& valve4.transform.localPosition.y >= 0.6f || Input.GetKey("joystick button 8") && valve4.transform.localPosition.y >= 0.6f)
             {
                 valve4.transform.Rotate(0, 0, 0.1f);
                 valve4.transform.localPosition -= new Vector3(0, 0.004f, 0);
                 valveblock4.transform.localPosition -= new Vector3(0, 0.004f, 0);
             }
-            if (Input.GetKey(KeyCode.A) || Input.GetKey("joystick button 9") && valve4.transform.localPosition.y <= 5.7f)
+            if (Input.GetKey(KeyCode.A)&& valve4.transform.localPosition.y <= 5.7f || Input.GetKey("joystick button 9") && valve4.transform.localPosition.y <= 5.7f)
             {
                 valve4.transform.Rotate(0, 0, -0.1f);
                 valve4.transform.localPosition += new Vector3(0, 0.004f, 0);
