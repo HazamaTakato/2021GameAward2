@@ -1318,7 +1318,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 547695198}
-  - component: {fileID: 547695197}
   - component: {fileID: 547695196}
   - component: {fileID: 547695195}
   - component: {fileID: 547695199}
@@ -1371,29 +1370,6 @@ MonoBehaviour:
   changeGauge: {fileID: 83580194}
   Gauge: 0
   leverON: 0
-  block2: []
---- !u!114 &547695197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547695194}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8faa0d4ba16924c927e9dd957834ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  rb: {fileID: 547695195}
-  Item: {fileID: 2129455578}
-  GetItem: 0
-  over: {fileID: 1433947785}
-  normal: {fileID: 1208882271}
-  hitflag: 0
-  changeSize: 0
-  changeGauge: {fileID: 83580194}
-  Gauge: 0
   block2: []
 --- !u!4 &547695198
 Transform:

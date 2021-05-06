@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 27501944}
   m_Layer: 0
   m_Name: LeverSeitch
-  m_TagString: block
+  m_TagString: lever2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 27501943}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 285132031}
   m_Layer: 0
   m_Name: LeverSeitch (4)
-  m_TagString: lever3
+  m_TagString: lever4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,9 +781,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 331579185}
-  - component: {fileID: 331579184}
-  - component: {fileID: 331579183}
   - component: {fileID: 331579182}
+  - component: {fileID: 331579183}
+  - component: {fileID: 331579184}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -805,7 +805,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 1
 --- !u!114 &331579183
 MonoBehaviour:
@@ -816,7 +816,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 331579181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1110e01449d833428fa4fa051fbcc3c, type: 3}
+  m_Script: {fileID: 11500000, guid: bedc0b595a48ec44395ce8a4558e6a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
@@ -827,12 +827,31 @@ MonoBehaviour:
   normal: {fileID: 2013189778}
   hitflag: 0
   changeSize: 0
-  lever: {fileID: 0}
-  leverblock: {fileID: 0}
-  changeGauge: {fileID: 0}
-  Gauge: 0
+  lever: {fileID: 1626490705}
+  leverblock: {fileID: 503919766}
+  valve: {fileID: 1814663459}
+  valveblock: {fileID: 2078041331}
+  valve2: {fileID: 1068161267}
+  valveblock2: {fileID: 1183788516}
+  lever2: {fileID: 27501943}
+  lever2block: {fileID: 2048832354}
+  lever3: {fileID: 2092413668}
+  lever3block: {fileID: 380914044}
+  lever4: {fileID: 285132030}
+  lever4block: {fileID: 1656245142}
+  lever4block1: {fileID: 520056008}
+  getValve: 0
+  getValve2: 0
   leverON: 0
-  block2: []
+  lever2ON: 0
+  lever3ON: 0
+  lever4ON: 0
+  getButton: 0
+  getButton2: 0
+  getButton3: 0
+  changeGauge: {fileID: 1560121924}
+  Gauge: 0
+  pcamera: {fileID: 426200004}
 --- !u!114 &331579184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -840,22 +859,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 331579181}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8faa0d4ba16924c927e9dd957834ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 1df81b4f6b4d9ec4cad4a977382db36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  rb: {fileID: 331579182}
-  Item: {fileID: 1091271699}
+  MyScale: {x: 0, y: 0, z: 0}
   GetItem: 0
-  over: {fileID: 1127170130}
-  normal: {fileID: 2013189778}
-  hitflag: 0
-  changeSize: 0
-  changeGauge: {fileID: 0}
-  Gauge: 0
-  block2: []
+  DropItem: 0
 --- !u!4 &331579185
 Transform:
   m_ObjectHideFlags: 0
@@ -978,7 +989,7 @@ GameObject:
   - component: {fileID: 380914046}
   - component: {fileID: 380914045}
   m_Layer: 0
-  m_Name: transcube(kari)
+  m_Name: transcube(kari)3
   m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,7 +1063,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380914044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.02, y: 10.22, z: 0}
+  m_LocalPosition: {x: 20, y: 9.91, z: 0}
   m_LocalScale: {x: 1.1951194, y: 2.9648998, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1071,7 +1082,7 @@ GameObject:
   - component: {fileID: 426200006}
   - component: {fileID: 426200005}
   m_Layer: 0
-  m_Name: Main Camera (1)
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1167,7 +1178,7 @@ GameObject:
   - component: {fileID: 503919768}
   - component: {fileID: 503919767}
   m_Layer: 0
-  m_Name: transcube(kari)
+  m_Name: transcube(kari)1
   m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1260,7 +1271,7 @@ GameObject:
   - component: {fileID: 520056010}
   - component: {fileID: 520056009}
   m_Layer: 0
-  m_Name: transcube(kari)
+  m_Name: transcube(kari)444
   m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1640,6 +1651,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8736529116454271667, guid: e800b9b87b59f0946a8d5fb1740b9d93,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8736529116454271668, guid: e800b9b87b59f0946a8d5fb1740b9d93,
         type: 3}
@@ -2697,7 +2713,7 @@ GameObject:
   - component: {fileID: 1068161268}
   m_Layer: 0
   m_Name: Valve (4)
-  m_TagString: valve
+  m_TagString: valve2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2770,7 +2786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068161267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.05, y: 0.72, z: 0}
+  m_LocalPosition: {x: 22.05, y: 0.7, z: 0}
   m_LocalScale: {x: 1.0482097, y: 1.0055153, z: 1.3696748}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3441,11 +3457,11 @@ GameObject:
   - component: {fileID: 1272728545}
   m_Layer: 0
   m_Name: Seitch (1)
-  m_TagString: block
+  m_TagString: button2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1272728545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3531,6 +3547,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268750962031756966, guid: f992ea3d1a4d34c45aeb712551dc2392,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5268750962031756970, guid: f992ea3d1a4d34c45aeb712551dc2392,
         type: 3}
@@ -3839,11 +3860,11 @@ GameObject:
   - component: {fileID: 1480195863}
   m_Layer: 0
   m_Name: Seitch (2)
-  m_TagString: block
+  m_TagString: button3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1480195863
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4011,6 +4032,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1560121924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8736529115535872800, guid: e800b9b87b59f0946a8d5fb1740b9d93,
+    type: 3}
+  m_PrefabInstance: {fileID: 575274298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1610058803
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,11 +4058,11 @@ GameObject:
   - component: {fileID: 1610058804}
   m_Layer: 0
   m_Name: Seitch
-  m_TagString: block
+  m_TagString: button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1610058804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4211,7 +4244,7 @@ GameObject:
   - component: {fileID: 1626490706}
   m_Layer: 0
   m_Name: LeverSeitch (3)
-  m_TagString: lever3
+  m_TagString: lever
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4396,7 +4429,7 @@ GameObject:
   - component: {fileID: 1656245144}
   - component: {fileID: 1656245143}
   m_Layer: 0
-  m_Name: transcube(kari)
+  m_Name: transcube(kari)44
   m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4470,7 +4503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656245142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.46, y: 4.07, z: 0}
+  m_LocalPosition: {x: -10.46, y: 5.11, z: 0}
   m_LocalScale: {x: 1.1951194, y: 3.0740316, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5641,7 +5674,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f0d1853137e633641ac9ac2cf265e637, type: 2}
+  - {fileID: 2100000, guid: b902d66061ec52040b37a7b26da20b61, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5807,7 +5840,7 @@ GameObject:
   - component: {fileID: 2048832356}
   - component: {fileID: 2048832355}
   m_Layer: 0
-  m_Name: transcube(kari)
+  m_Name: transcube(kari)2
   m_TagString: block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6087,7 +6120,7 @@ GameObject:
   - component: {fileID: 2092413669}
   m_Layer: 0
   m_Name: LeverSeitch (1)
-  m_TagString: block
+  m_TagString: lever3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6100,7 +6133,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092413668}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
