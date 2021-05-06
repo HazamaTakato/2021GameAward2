@@ -45,10 +45,17 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
+<<<<<<< HEAD
   m_MinSize: {x: 678, y: 342}
   m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
   controlID: 99
+=======
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 0
+  controlID: 58
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,7 +226,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 100
+=======
+  controlID: 59
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +255,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 101
+=======
+  controlID: 97
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,14 +359,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Script
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\K018A1407\Documents\2021GameAward\2021GameAward
+  m_LastProjectPath: "C:\\\u5236\u4F5C2021GameAward\\2021GameAward"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 2e390000
     m_LastClickedID: 14638
     m_ExpandedIDs: 000000002239000000ca9a3b
+=======
+    m_SelectedIDs: e43b0000
+    m_LastClickedID: 15332
+    m_ExpandedIDs: 00000000da3b000000ca9a3b
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -379,7 +400,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000022390000
+=======
+    m_ExpandedIDs: 00000000da3b0000
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,9 +527,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 403c0000
       m_LastClickedID: 15424
       m_ExpandedIDs: a0faffff6afbffff
+=======
+      m_SelectedIDs: 9a3e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 22c8ffffb4c8ffff1ac9ffff04ceffffd6ceffffb6f4ffff00f5ffff4af5ffffa0f5ffffb6f5ffff34f6ffff6af7ffff664c0000
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -564,9 +595,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -1.4010215, y: 4.3848295, z: -0.9082031}
     speed: 2
     m_Value: {x: -1.4010215, y: 4.3848295, z: -0.9082031}
+=======
+    m_Target: {x: -36.25342, y: 213.93225, z: -65.235176}
+    speed: 2
+    m_Value: {x: -36.25342, y: 213.93225, z: -65.235176}
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -616,9 +653,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10.435107
     speed: 2
     m_Value: 10.435107
+=======
+    m_Target: 61.305916
+    speed: 2
+    m_Value: 61.305916
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
   m_Ortho:
     m_Target: 1
     speed: 2
