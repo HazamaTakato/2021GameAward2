@@ -18,6 +18,8 @@ TagManager:
   - valve4
   - button
   - lever4
+  - button2
+  - button3
   layers:
   - Default
   - TransparentFX
