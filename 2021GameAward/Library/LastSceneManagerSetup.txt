@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/GameScene5.unity
-=======
-- path: Assets/Scenes/SelectScene.unity
->>>>>>> 936156ebd17148fee46740d040c550546b194324
+- path: Assets/Scenes/GameScene4.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

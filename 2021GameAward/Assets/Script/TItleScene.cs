@@ -22,6 +22,6 @@ public class TItleScene : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("SelectScene");
     }
 }

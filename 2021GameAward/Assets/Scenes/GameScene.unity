@@ -1212,6 +1212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5968969348529ef4bbf79979ebccb5be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TWO: 0
   sound1: {fileID: 8300000, guid: 2059e1445cb7fd64eb3df3bdecb378e8, type: 3}
   sound2: {fileID: 8300000, guid: 49cb442ae2f0201499070d0695ec1887, type: 3}
   sound3: {fileID: 8300000, guid: 15f59b4942309a04d8c462fbabddd834, type: 3}
@@ -1264,7 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8faa0d4ba16924c927e9dd957834ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   rb: {fileID: 715814233}
   Item: {fileID: 882120767}
   GetItem: 0
