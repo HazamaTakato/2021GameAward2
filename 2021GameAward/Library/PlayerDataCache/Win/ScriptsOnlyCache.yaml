@@ -1,7 +1,6 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - AllTime
     - EndingScene
     - Pause
     - PlayerCamera
@@ -64,6 +63,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11458}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12178}
     - Class: 114
       Script: {instanceID: 13642}
@@ -73,6 +73,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14264}
     - Class: 114
       Script: {instanceID: 14328}
+=======
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 12178}
+    - Class: 114
+      Script: {instanceID: 12876}
+    - Class: 114
+      Script: {instanceID: 13640}
+    - Class: 114
+      Script: {instanceID: 13784}
+    - Class: 114
+      Script: {instanceID: 14260}
+>>>>>>> a067c3d042701da758a409be6fe308b194be0709
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -80,6 +93,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -133,6 +148,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12342}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13292}
     - Class: 114
       Script: {instanceID: 13642}
@@ -144,6 +160,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14264}
     - Class: 114
       Script: {instanceID: 14306}
+=======
+      Script: {instanceID: 13290}
+    - Class: 114
+      Script: {instanceID: 13640}
+    - Class: 114
+      Script: {instanceID: 13790}
+    - Class: 114
+      Script: {instanceID: 13818}
+    - Class: 114
+      Script: {instanceID: 14260}
+    - Class: 114
+      Script: {instanceID: 14302}
+>>>>>>> a067c3d042701da758a409be6fe308b194be0709
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -208,6 +237,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12342}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13642}
     - Class: 114
       Script: {instanceID: 13820}
@@ -215,6 +245,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14162}
     - Class: 114
       Script: {instanceID: 14306}
+=======
+      Script: {instanceID: 13640}
+    - Class: 114
+      Script: {instanceID: 13790}
+    - Class: 114
+      Script: {instanceID: 13818}
+    - Class: 114
+      Script: {instanceID: 14160}
+    - Class: 114
+      Script: {instanceID: 14302}
+>>>>>>> a067c3d042701da758a409be6fe308b194be0709
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -279,6 +320,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12342}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 13240}
     - Class: 114
       Script: {instanceID: 13642}
@@ -288,6 +330,17 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14128}
     - Class: 114
       Script: {instanceID: 14306}
+=======
+      Script: {instanceID: 13238}
+    - Class: 114
+      Script: {instanceID: 13640}
+    - Class: 114
+      Script: {instanceID: 13818}
+    - Class: 114
+      Script: {instanceID: 14126}
+    - Class: 114
+      Script: {instanceID: 14302}
+>>>>>>> a067c3d042701da758a409be6fe308b194be0709
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -444,6 +497,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11458}
     - Class: 114
+<<<<<<< HEAD
       Script: {instanceID: 12178}
     - Class: 114
       Script: {instanceID: 13084}
@@ -451,6 +505,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13642}
     - Class: 114
       Script: {instanceID: 14264}
+=======
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 12178}
+    - Class: 114
+      Script: {instanceID: 12876}
+    - Class: 114
+      Script: {instanceID: 13082}
+    - Class: 114
+      Script: {instanceID: 13640}
+    - Class: 114
+      Script: {instanceID: 14260}
+>>>>>>> a067c3d042701da758a409be6fe308b194be0709
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -458,6 +525,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -1051,4 +1120,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameScene4.unity
   - Assets/Scenes/GameScene5.unity
   - Assets/Scenes/EndingScene.unity
-  playerPath: C:/Users/K018A1407/Downloads/build/2021GameAward.exe
+  playerPath: "C:/Users/K018A1423/Desktop/\u6388\u696D/\u30B2\u30FC\u30E0\u5927\u8CDE_\u30E1\u30D3\u30A6\u30B9/\u30D3\u30EB\u30C9/2021GameAward.exe"
