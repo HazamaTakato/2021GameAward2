@@ -52,12 +52,12 @@ public class Sphere : MonoBehaviour
             changeSize = true;
             //if (changeGauge.value > 0)
             //{
-            if(playerItem.GetItem)
+            if(PlayerItem.GetItem)
             {
                 keyTimelimit += Time.deltaTime;
                 if(keyTimelimit > 0.5f)
                 {
-                    playerItem.DropItem = true;
+                    PlayerItem.DropItem = true;
                     keyTimelimit = 0;
                 }
             }
@@ -86,12 +86,12 @@ public class Sphere : MonoBehaviour
            Input.GetKey("joystick button 1"))
         {
             //changeSize = false;
-            if (playerItem.GetItem)
+            if (PlayerItem.GetItem)
             {
                 keyTimelimit += Time.deltaTime;
                 if (keyTimelimit > 0.5f)
                 {
-                    playerItem.DropItem = true;
+                    PlayerItem.DropItem = true;
                     keyTimelimit = 0;
                 }
             }
@@ -192,8 +192,10 @@ public class Sphere : MonoBehaviour
         //{
         //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //}
-        if (other.tag == "Goal" &&GetItem)
+        if (other.tag == "Goal" &&PlayerItem.GetItem)
         {
+            PlayerItem.GetItem = false;
+            PlayerItem.DropItem = false;
             SceneManager.LoadScene("GameScene3");
         }
     }

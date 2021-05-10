@@ -1320,8 +1320,8 @@ GameObject:
   - component: {fileID: 547695198}
   - component: {fileID: 547695196}
   - component: {fileID: 547695195}
-  - component: {fileID: 547695199}
   - component: {fileID: 547695200}
+  - component: {fileID: 547695197}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1369,8 +1369,21 @@ MonoBehaviour:
   leverblock: {fileID: 25606475}
   changeGauge: {fileID: 83580194}
   Gauge: 0
-  leverON: 0
+  leverON: 1
   block2: []
+--- !u!114 &547695197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547695194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd0189ac34d3d745b7004e40d1bdb88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MyScale: {x: 0, y: 0, z: 0}
 --- !u!4 &547695198
 Transform:
   m_ObjectHideFlags: 0
@@ -1388,21 +1401,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &547695199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547695194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1002bfde54862c640a1ac1d128125f5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MyScale: {x: 0, y: 0, z: 0}
-  GetItem: 0
-  DropItem: 0
 --- !u!114 &547695200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1416,6 +1414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseUI: {fileID: 1521452767}
+  pauseSelect: {fileID: 0}
 --- !u!1 &650399720
 GameObject:
   m_ObjectHideFlags: 0

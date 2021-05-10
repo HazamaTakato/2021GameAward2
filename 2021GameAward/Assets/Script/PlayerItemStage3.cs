@@ -17,8 +17,8 @@ public class PlayerItemStage3 : MonoBehaviour
 
     SphereStage3 player;
 
-    public bool GetItem = false;
-    public bool DropItem = false;
+    public static bool GetItem = false;
+    public static bool DropItem = false;
 
     // Start is called before the first frame update
     void Start()
@@ -53,33 +53,33 @@ public class PlayerItemStage3 : MonoBehaviour
                 DropItem = false;
             }
         }
-        if (player.GetItem)
-        {
-            Item.transform.position = new Vector3(MyPosition.x, MyPosition.y, -7);
-            if (DropItem)
-            {
-                Item.transform.position = new Vector3(
-                    Item.transform.position.x + (MyScale.x * (PlayerRigid.velocity.x > 0.0000001f ? -1 : 1)),
-                    Item.transform.position.y + MyScale.y / 3, 0);
-                ItemRigid.velocity = -PlayerRigid.velocity / 5;
-                player.GetItem = false;
-                GetItem = false;
-                DropItem = false;
-            }
-        }
+        //if (player.GetItem)
+        //{
+        //    Item.transform.position = new Vector3(MyPosition.x, MyPosition.y, -7);
+        //    if (DropItem)
+        //    {
+        //        Item.transform.position = new Vector3(
+        //            Item.transform.position.x + (MyScale.x * (PlayerRigid.velocity.x > 0.0000001f ? -1 : 1)),
+        //            Item.transform.position.y + MyScale.y / 3, 0);
+        //        ItemRigid.velocity = -PlayerRigid.velocity / 5;
+        //        player.GetItem = false;
+        //        GetItem = false;
+        //        DropItem = false;
+        //    }
+        //}
     }
     private void OnCollisionStay(Collision other)
     {
         if (GetItem)
             return;
-        if (player.GetItem)
-            return;
+        //if (player.GetItem)
+        //    return;
         if (other.gameObject == Item)
         {
             //Debug.Log("アイテムに当たった");
             if (MyScale.x / 1.7f >= Item.transform.localScale.x && !GetItem)
             {
-                player.GetItem = true;
+                //player.GetItem = true;
                 GetItem = true;
                 MyScale = new Vector3(Item.transform.localScale.x + 0.8f, Item.transform.localScale.y + 0.8f, 1);
                 NormalPlayer.transform.localScale = MyScale;

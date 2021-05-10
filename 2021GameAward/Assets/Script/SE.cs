@@ -40,15 +40,15 @@ public class SE : MonoBehaviour
         {
             audioSource.PlayOneShot(sound3);
         }
-        if(playerItem.GetItem)
+        if (PlayerItem.GetItem)
         {
             TWO = true;
         }
-        else if(playerItem2.GetItem)
+        else if (PlayerItemStage2.GetItem)
         {
             TWO = true;
         }
-        else if(playerItem3.GetItem)
+        else if(PlayerItemStage3.GetItem)
         {
             TWO = true;
         }

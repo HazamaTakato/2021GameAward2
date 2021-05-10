@@ -89,12 +89,12 @@ public class SphereStage4 : MonoBehaviour
             changeSize = true;
             //if (changeGauge.value > 0)
             //{
-            if (playerItem.GetItem)
+            if (PlayerItem.GetItem)
             {
                 keyTimelimit += Time.deltaTime;
                 if (keyTimelimit > 0.5f)
                 {
-                    playerItem.DropItem = true;
+                    PlayerItem.DropItem = true;
                     keyTimelimit = 0;
                 }
             }
@@ -122,12 +122,12 @@ public class SphereStage4 : MonoBehaviour
            Input.GetKey("joystick button 1"))
         {
             //changeSize = false;
-            if (playerItem.GetItem)
+            if (PlayerItem.GetItem)
             {
                 keyTimelimit += Time.deltaTime;
                 if (keyTimelimit > 0.5f)
                 {
-                    playerItem.DropItem = true;
+                    PlayerItem.DropItem = true;
                     keyTimelimit = 0;
                 }
             }
@@ -298,8 +298,10 @@ public class SphereStage4 : MonoBehaviour
             getButton = true;
             //button.transform.localPosition = new Vector3(13.76f, 6.45f, 0);
         }
-        if (other.tag == "Goal" && GetItem)
+        if (other.tag == "Goal" && PlayerItem.GetItem)
         {
+            PlayerItem.GetItem = false;
+            PlayerItem.DropItem = false;
             IsGoal = true;
             SceneManager.LoadScene("EndingScene");
         }
