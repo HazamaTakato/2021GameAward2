@@ -159,10 +159,10 @@ public class SphereStage3 : MonoBehaviour
             keyTimelimit = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 6"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        //if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 6"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //}
 
         //ゲージで大きさの指標をしている処理
         Gauge = normal.transform.localScale.x - 1.0f;

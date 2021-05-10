@@ -169,10 +169,10 @@ public class SphereStage2 : MonoBehaviour
             changeSize = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 7"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        //if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 7"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //}
     }
 
     private void OnTriggerStay(Collider other)

@@ -21,6 +21,7 @@ public class PauseScene : MonoBehaviour
     }
     public void OnClickTitle()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("TitleScene");
     }
     public void OnClickSound()
@@ -30,6 +31,7 @@ public class PauseScene : MonoBehaviour
     }
     public void OnClickRetry()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

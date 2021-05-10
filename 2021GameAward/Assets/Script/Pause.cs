@@ -15,9 +15,9 @@ public class Pause : MonoBehaviour
     {
         pauseUI.GetComponent<GameObject>();
         pauseSelect.GetComponent<GameObject>();
-        title = GameObject.Find("/PauseUI/Title").GetComponent<Button>();
-        sound = GameObject.Find("/PauseUI/Sound").GetComponent<Button>();
-        retry = GameObject.Find("/PauseUI/Retry").GetComponent<Button>();
+        title = GameObject.Find("/PauseUI2/Title").GetComponent<Button>();
+        sound = GameObject.Find("/PauseUI2/Sound").GetComponent<Button>();
+        retry = GameObject.Find("/PauseUI2/Retry").GetComponent<Button>();
 
         pauseUI.SetActive(false);
         pauseSelect.SetActive(false);
