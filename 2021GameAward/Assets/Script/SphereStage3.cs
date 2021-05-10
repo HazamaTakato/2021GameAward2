@@ -53,6 +53,8 @@ public class SphereStage3 : MonoBehaviour
 
     public Camera pcamera;
     public static bool IsGoal = false;
+    bool buttontouch;
+    bool getlever4;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +71,8 @@ public class SphereStage3 : MonoBehaviour
         block2 = GameObject.FindGameObjectsWithTag("block2");
         playerItem = GetComponent<PlayerItemStage3>();
         keyTimelimit = 0;
+        buttontouch = false;
+        getlever4 = false;
     }
 
     // Update is called once per frame
@@ -289,6 +293,7 @@ public class SphereStage3 : MonoBehaviour
         }
         if(buttonON)
         {
+            buttontouch = true;
             if (buttonblock.transform.localPosition.y >= -6.8)
             {
                 buttonblock.transform.localPosition -= new Vector3(0, 0.01f, 0);
@@ -296,9 +301,19 @@ public class SphereStage3 : MonoBehaviour
         }
         if (!buttonON)
         {
-            if(buttonblock.transform.localPosition.y<=3.776f)
+            if (getlever4 && buttontouch)
             {
-                buttonblock.transform.localPosition += new Vector3(0, 0.0005f, 0);
+                if (buttonblock.transform.localPosition.y <= -1.12f)
+                {
+                    buttonblock.transform.localPosition += new Vector3(0, 0.001f, 0);
+                }
+            }
+            if (GetItem && buttontouch)
+            {
+                if (buttonblock.transform.localPosition.y <= 3.776f)
+                {
+                    buttonblock.transform.localPosition += new Vector3(0, 0.001f, 0);
+                }
             }
         }
     }
@@ -362,6 +377,7 @@ public class SphereStage3 : MonoBehaviour
         {
             lever4block.SetActive(false);
             lever4.transform.localRotation = new Quaternion(0, 0, 3.5f, 1);
+            getlever4 = true;
         }
 
         if (other.tag == "valve")

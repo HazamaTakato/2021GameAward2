@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8faa0d4ba16924c927e9dd957834ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 6
   rb: {fileID: 505495906}
   Item: {fileID: 793653244}
   GetItem: 0
@@ -834,6 +834,9 @@ MonoBehaviour:
   normal: {fileID: 1085122983}
   hitflag: 0
   changeSize: 0
+  changeGauge: {fileID: 0}
+  Gauge: 0
+  block2: []
 --- !u!4 &505495908
 Transform:
   m_ObjectHideFlags: 0
@@ -871,6 +874,12 @@ MonoBehaviour:
   normal: {fileID: 1085122983}
   hitflag: 0
   changeSize: 0
+  lever: {fileID: 0}
+  leverblock: {fileID: 0}
+  changeGauge: {fileID: 0}
+  Gauge: 0
+  leverON: 0
+  block2: []
 --- !u!1 &521917008
 GameObject:
   m_ObjectHideFlags: 0

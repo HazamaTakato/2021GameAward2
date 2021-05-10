@@ -1,5 +1,21 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/takahasi.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/GameScene4.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/TItleScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/GameScene5.unity
+=======
+- path: Assets/Scenes/SelectScene.unity
+>>>>>>> 936156ebd17148fee46740d040c550546b194324
+>>>>>>> 0ace9ae2390ae2580efd77e61c082416d79d365d
+>>>>>>> a067c3d042701da758a409be6fe308b194be0709
+>>>>>>> f95048db2cb8091ab7f04b5c9f03b181ebaf6ada
   isLoaded: 1
   isActive: 1
   isSubScene: 0
