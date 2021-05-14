@@ -201,6 +201,10 @@ public class SphereStage5 : MonoBehaviour
         //}
         if (getValve)
         {
+            rb.velocity = new Vector3(0, 0, 0);
+        }
+        if (getValve)
+        {
             this.transform.position = valve.transform.position;
             if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.y <= -3.5f)
             {

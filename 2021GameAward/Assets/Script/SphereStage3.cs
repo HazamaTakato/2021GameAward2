@@ -109,6 +109,10 @@ public class SphereStage3 : MonoBehaviour
                 //changeGauge.value -= 0.01f;
             }
         }
+        if(getValve||getValve2||getValve3||getValve4)
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+        }
         if (Input.GetKeyDown(KeyCode.C))
         {
             changeSize = true;
@@ -356,7 +360,7 @@ public class SphereStage3 : MonoBehaviour
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
-            SceneManager.LoadScene("EndingScene");
+            SceneManager.LoadScene("GameScene5");
         }
         //if (other.tag == "lever")
         //{
