@@ -20,6 +20,8 @@ TagManager:
   - lever4
   - button2
   - button3
+  - button4
+  - button5
   layers:
   - Default
   - TransparentFX
