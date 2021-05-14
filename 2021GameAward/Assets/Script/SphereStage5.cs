@@ -305,12 +305,12 @@ public class SphereStage5 : MonoBehaviour
         if (other.tag == "button2")
         {
             getButton = false;
-            button.transform.localPosition = new Vector3(1.09f, 1.28f, 0);
+            button.transform.localPosition = new Vector3(0, 0, 10);
         }
         if(other.tag=="button3")
         {
             getButton3 = false;
-            button3.transform.localPosition = new Vector3(-14.4f, -0.55f, 0);
+            button3.transform.localPosition = new Vector3(0, 0, 10);
         }
     }
 
@@ -327,7 +327,7 @@ public class SphereStage5 : MonoBehaviour
         if (other.tag == "button2")
         {
             getButton = true;
-            button.transform.localPosition = new Vector3(1.09f, 1.01f, 0);
+            button.transform.localPosition = new Vector3(0.5f,0, 10);
         }
         if(other.tag=="button")
         {
@@ -338,7 +338,7 @@ public class SphereStage5 : MonoBehaviour
         if (other.tag == "button3")
         {
             getButton3 = true;
-            button3.transform.localPosition = new Vector3(-14.4f, -0.94f, 0);
+            button3.transform.localPosition = new Vector3(0.5f, 0, 10);
         }
         if (other.tag == "Goal" && PlayerItem.GetItem)
         {

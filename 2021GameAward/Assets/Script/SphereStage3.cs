@@ -334,7 +334,7 @@ public class SphereStage3 : MonoBehaviour
         if(other.tag=="button")
         {
             buttonON = false;
-            button.transform.localPosition = new Vector3(0, 0, 0);
+            button.transform.localPosition = new Vector3(0, 0, 10);
             //button.transform.localPosition = new Vector3(14, 6.45f, 0);
         }
     }
@@ -353,7 +353,7 @@ public class SphereStage3 : MonoBehaviour
         {
             buttonON = true;
             //button.transform.localPosition = new Vector3(13.76f, 6.45f, 0);
-            button.transform.localPosition = new Vector3(-0.6f,0, 0);
+            button.transform.localPosition = new Vector3(-0.6f,0, 10);
         }
         if (other.tag == "Goal" && PlayerItem.GetItem)
         {
