@@ -73,6 +73,8 @@ public class SphereStage3 : MonoBehaviour
         keyTimelimit = 0;
         buttontouch = false;
         getlever4 = false;
+        PlayerItem.GetItem = false;
+        PlayerItem.DropItem = false;
     }
 
     // Update is called once per frame

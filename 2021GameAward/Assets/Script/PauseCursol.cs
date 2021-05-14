@@ -12,6 +12,7 @@ public class PauseCursol : MonoBehaviour
 {
     public GameObject parentPos;
     float onInput;
+    float onKeyboardInput;
     Selecting select;
     public static bool onSelect;
 
@@ -28,13 +29,14 @@ public class PauseCursol : MonoBehaviour
     void Update()
     {
         onInput = Input.GetAxis("right");
+        onKeyboardInput = Input.GetAxis("Vertical");
 
-        if (onInput > 0.1f&&!onSelect)
+        if (onInput > 0.1f&&!onSelect||Input.GetKeyDown(KeyCode.W)&&!onSelect)
         {
             select = Selecting.BGM;
             onSelect = true;
         }
-        else if (onInput < -0.1f&&onSelect)
+        else if (onInput < -0.1f&& onSelect||Input.GetKeyDown(KeyCode.S) && onSelect)
         {
             select = Selecting.SE;
             onSelect = false;

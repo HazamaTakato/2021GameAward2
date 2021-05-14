@@ -35,6 +35,8 @@ public class Sphere : MonoBehaviour
         block2 = GameObject.FindGameObjectsWithTag("block2");
         playerItem = GetComponent<PlayerItem>();
         keyTimelimit = 0;
+        PlayerItem.GetItem = false;
+        PlayerItem.DropItem = false;
     }
 
     // Update is called once per frame

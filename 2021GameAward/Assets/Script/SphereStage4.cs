@@ -71,6 +71,8 @@ public class SphereStage4 : MonoBehaviour
         //block2 = GameObject.FindGameObjectsWithTag("block2");
         playerItem = GetComponent<PlayerItemStage4>();
         keyTimelimit = 0;
+        PlayerItem.GetItem = false;
+        PlayerItem.DropItem = false;
     }
 
     // Update is called once per frame
