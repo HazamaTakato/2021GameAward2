@@ -310,7 +310,7 @@ public class SphereStage3 : MonoBehaviour
                     buttonblock.transform.localPosition += new Vector3(0, 0.001f, 0);
                 }
             }
-            if (GetItem && buttontouch)
+            if (PlayerItem.GetItem && buttontouch)
             {
                 if (buttonblock.transform.localPosition.y <= 3.776f)
                 {
