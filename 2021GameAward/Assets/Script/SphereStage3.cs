@@ -73,6 +73,8 @@ public class SphereStage3 : MonoBehaviour
         keyTimelimit = 0;
         buttontouch = false;
         getlever4 = false;
+        PlayerItem.GetItem = false;
+        PlayerItem.DropItem = false;
     }
 
     // Update is called once per frame
@@ -106,6 +108,10 @@ public class SphereStage3 : MonoBehaviour
                 over.transform.localScale = over.transform.localScale + addcutSize;
                 //changeGauge.value -= 0.01f;
             }
+        }
+        if(getValve||getValve2||getValve3||getValve4)
+        {
+            rb.velocity = new Vector3(0, 0, 0);
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -159,10 +165,10 @@ public class SphereStage3 : MonoBehaviour
             keyTimelimit = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 6"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        //if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 6"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //}
 
         //ゲージで大きさの指標をしている処理
         Gauge = normal.transform.localScale.x - 1.0f;
@@ -308,7 +314,7 @@ public class SphereStage3 : MonoBehaviour
                     buttonblock.transform.localPosition += new Vector3(0, 0.001f, 0);
                 }
             }
-            if (GetItem && buttontouch)
+            if (PlayerItem.GetItem && buttontouch)
             {
                 if (buttonblock.transform.localPosition.y <= 3.776f)
                 {
@@ -328,7 +334,8 @@ public class SphereStage3 : MonoBehaviour
         if(other.tag=="button")
         {
             buttonON = false;
-            button.transform.localPosition = new Vector3(14, 6.45f, 0);
+            button.transform.localPosition = new Vector3(0, 0, 10);
+            //button.transform.localPosition = new Vector3(14, 6.45f, 0);
         }
     }
 
@@ -345,14 +352,15 @@ public class SphereStage3 : MonoBehaviour
         if(other.tag=="button")
         {
             buttonON = true;
-            button.transform.localPosition = new Vector3(13.76f, 6.45f, 0);
+            //button.transform.localPosition = new Vector3(13.76f, 6.45f, 0);
+            button.transform.localPosition = new Vector3(-0.6f,0, 10);
         }
         if (other.tag == "Goal" && PlayerItem.GetItem)
         {
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
-            SceneManager.LoadScene("EndingScene");
+            SceneManager.LoadScene("GameScene5");
         }
         //if (other.tag == "lever")
         //{

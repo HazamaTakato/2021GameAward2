@@ -71,6 +71,8 @@ public class SphereStage4 : MonoBehaviour
         //block2 = GameObject.FindGameObjectsWithTag("block2");
         playerItem = GetComponent<PlayerItemStage4>();
         keyTimelimit = 0;
+        PlayerItem.GetItem = false;
+        PlayerItem.DropItem = false;
     }
 
     // Update is called once per frame
@@ -157,10 +159,10 @@ public class SphereStage4 : MonoBehaviour
             keyTimelimit = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 6"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        //if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 6"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //}
 
         //ゲージで大きさの指標をしている処理
         Gauge = normal.transform.localScale.x - 1.0f;
@@ -191,6 +193,10 @@ public class SphereStage4 : MonoBehaviour
         //    hitflag = false;
         //    GetItem = false;
         //}
+        if (getValve || getValve2)
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+        }
         if (getValve)
         {
             this.transform.position = valve.transform.position;
@@ -303,7 +309,7 @@ public class SphereStage4 : MonoBehaviour
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
-            SceneManager.LoadScene("EndingScene");
+            SceneManager.LoadScene("GameScene6");
         }
         if (other.tag == "lever")
         {
@@ -331,7 +337,7 @@ public class SphereStage4 : MonoBehaviour
             //lever4block.SetActive(false);
             lever4.transform.localRotation = new Quaternion(0, 0, -3.5f, 1);
             lever4block.transform.localPosition = new Vector3(-10.45f, 6.74f, 0);
-            lever4block1.transform.localPosition = new Vector3(9.2f, 7.33f, 0);
+            lever4block1.transform.localPosition = new Vector3(9.2f, 6.91f, 0);
         }
 
         if (other.tag == "valve")

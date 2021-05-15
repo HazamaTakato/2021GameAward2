@@ -17,11 +17,19 @@ public class SE : MonoBehaviour
     public AudioClip sound3;
 
     AudioSource audioSource;
+    AudioSource BGM;
+    public AudioSource SizeChangeBig;
+    public AudioSource SizeChangeSmall;
+    public AudioSource Item;
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.Find("Player");
         audioSource = GetComponent<AudioSource>();
+        SizeChangeBig.GetComponent<AudioSource>();
+        SizeChangeSmall.GetComponent<AudioSource>();
+        Item.GetComponent<AudioSource>();
+
         playerItem = Player.GetComponent<Sphere>();
         playerItem2 = Player.GetComponent<SphereStage2>();
         playerItem3 = Player.GetComponent<SphereStage3>();
@@ -30,31 +38,31 @@ public class SE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z)||
-            Input.GetKey("joystick button 0"))
-        {
-            audioSource.PlayOneShot(sound1);
-        }
-        else if(Input.GetKey(KeyCode.X) ||
-           Input.GetKey("joystick button 1"))
-        {
-            audioSource.PlayOneShot(sound3);
-        }
+        if (Time.timeScale == 0f)
+            return;
+
         if (PlayerItem.GetItem)
         {
+            if (!TWO)
+                Item.PlayOneShot(sound2);
             TWO = true;
         }
-        else if (PlayerItemStage2.GetItem)
+
+        if (PlayerItem.GetItem)
+            return;
+
+        if(Input.GetKeyDown(KeyCode.Z)||
+            Input.GetKeyDown("joystick button 0"))
         {
-            TWO = true;
+            SizeChangeBig.PlayOneShot(sound1);
         }
-        else if(PlayerItemStage3.GetItem)
+        else if(Input.GetKeyDown(KeyCode.X) ||
+           Input.GetKeyDown("joystick button 1"))
         {
-            TWO = true;
+            SizeChangeSmall.PlayOneShot(sound3);
         }
-        if(TWO)
+        if(PlayerItem.DropItem)
         { 
-            audioSource.PlayOneShot(sound2);
             TWO = false;
         }
     }

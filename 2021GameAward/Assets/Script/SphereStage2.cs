@@ -58,6 +58,8 @@ public class SphereStage2 : MonoBehaviour
         block2 = GameObject.FindGameObjectsWithTag("block2");
         playerItem = GetComponent<PlayerItemStage2>();
         keyTimelimit = 0;
+        PlayerItem.GetItem = false;
+        PlayerItem.DropItem = false;
     }
 
     // Update is called once per frame
@@ -169,10 +171,10 @@ public class SphereStage2 : MonoBehaviour
             changeSize = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 7"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        //if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown("joystick button 7"))
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //}
     }
 
     private void OnTriggerStay(Collider other)

@@ -11,6 +11,10 @@ public class keyboarVolume : MonoBehaviour
     void Start()
     {
         volume.GetComponent<Slider>();
+        if (transform.name == "BGMSlider")
+            volume.value = VolumeScript.BGMVolume;
+        else if (transform.name == "SESlider")
+            volume.value = VolumeScript.SEVolume;
     }
 
     // Update is called once per frame
