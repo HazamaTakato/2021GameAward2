@@ -212,7 +212,7 @@ Transform:
   m_LocalScale: {x: 3.2324564, y: 6.772168, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &46368819
 GameObject:
@@ -850,7 +850,7 @@ PrefabInstance:
     - target: {fileID: 6570573149731151823, guid: 3bebed1ed96ab7041a15a0e01036e77b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 6570573149731151823, guid: 3bebed1ed96ab7041a15a0e01036e77b,
         type: 3}
@@ -1068,7 +1068,7 @@ Transform:
   m_LocalScale: {x: 67.35104, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &300169414
 GameObject:
@@ -1347,8 +1347,69 @@ Transform:
   m_LocalScale: {x: 1.2235436, y: 7.126488, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &336050803
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 130190, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_Name
+      value: FadeManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474238, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460108, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
+      propertyPath: DebugMode
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd9d58dbfb8f846f58b62a48334a0058, type: 3}
 --- !u!1 &336931933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,7 +1501,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &337888458
 GameObject:
@@ -1639,6 +1700,7 @@ GameObject:
   - component: {fileID: 547695196}
   - component: {fileID: 547695195}
   - component: {fileID: 547695197}
+  - component: {fileID: 547695199}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1674,7 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1110e01449d833428fa4fa051fbcc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   rb: {fileID: 547695195}
   Item: {fileID: 2129455578}
   GetItem: 0
@@ -1716,8 +1778,22 @@ Transform:
   - {fileID: 1208882275}
   - {fileID: 1465072243}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547695199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547695194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e186c6ff7c6cb4e8dc36dec8bd1a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overPlayer: {fileID: 1433947785}
+  rigid: {fileID: 547695195}
 --- !u!1 &650399720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1995,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738876368
 GameObject:
@@ -2136,7 +2212,18 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944243466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+<<<<<<< HEAD
+  m_LocalPosition: {x: -3.4890804, y: 3.1488857, z: -9.9}
+=======
   m_LocalPosition: {x: -3.5765057, y: 3.1488857, z: -9.9}
+>>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+  m_LocalPosition: {x: -11.269691, y: 3.1488857, z: -9.9}
+=======
+  m_LocalPosition: {x: -3.4890804, y: 3.1488857, z: -9.9}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2344,7 +2431,7 @@ Transform:
   m_LocalScale: {x: 1.3932185, y: 0.16253664, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35}
 --- !u!1 &1011190355
 GameObject:
@@ -2801,7 +2888,7 @@ Transform:
   m_LocalScale: {x: 9.125177, y: 0.3149234, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1134798318 stripped
 GameObject:
@@ -2966,7 +3053,18 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
+<<<<<<< HEAD
+<<<<<<< HEAD
+    m_SensorSize: {x: 2.3265307, y: 1}
+=======
     m_SensorSize: {x: 2.3090453, y: 1}
+>>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    m_SensorSize: {x: 0.77040815, y: 1}
+=======
+    m_SensorSize: {x: 2.3265307, y: 1}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2988,7 +3086,7 @@ Transform:
   m_Children:
   - {fileID: 1557634334}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1173597042
 GameObject:
@@ -4185,7 +4283,7 @@ Transform:
   m_LocalScale: {x: 3.197789, y: 0.29695895, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1583075581
 GameObject:
@@ -4330,7 +4428,7 @@ PrefabInstance:
     - target: {fileID: 5002755580131876562, guid: a5210c3a737646d498c8ea3a64b974d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 5002755580131876562, guid: a5210c3a737646d498c8ea3a64b974d3,
         type: 3}
@@ -4603,7 +4701,7 @@ Transform:
   m_LocalScale: {x: 2.7024775, y: 7.2090282, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751360281
 GameObject:
