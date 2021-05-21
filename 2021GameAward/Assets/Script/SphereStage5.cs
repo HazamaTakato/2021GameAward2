@@ -54,6 +54,7 @@ public class SphereStage5 : MonoBehaviour
 
     public Camera pcamera;
     public static bool IsGoal = false;
+    bool goalF;
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +80,7 @@ public class SphereStage5 : MonoBehaviour
         PlayerItem.GetItem = false;
         PlayerItem.DropItem = false;
         keyTimelimit = 0;
+        goalF = false;
     }
 
     // Update is called once per frame
@@ -293,6 +295,17 @@ public class SphereStage5 : MonoBehaviour
                 button3block.transform.localPosition += new Vector3(0, 0.005f, 0);
             }
         }
+        if (goalF)
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.useGravity = false;
+            this.transform.localPosition = new Vector3(27.93f, -14.53f, 0);
+            this.transform.localScale -= new Vector3(0.025f, 0.025f, 0.025f);
+            if (transform.localScale.x <= 0.0f)
+            {
+                transform.localScale = new Vector3(0, 0, 0);
+            }
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -345,8 +358,9 @@ public class SphereStage5 : MonoBehaviour
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
+            goalF = true;
             //SceneManager.LoadScene("EndingScene");
-            FadeManager.Instance.LoadScene("EndingScene", 0.1f);
+            FadeManager.Instance.LoadScene("EndingScene", 1.0f);
         }
         if (other.tag == "lever")
         {
