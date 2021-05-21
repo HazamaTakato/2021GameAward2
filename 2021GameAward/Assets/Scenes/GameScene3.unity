@@ -1700,6 +1700,7 @@ GameObject:
   - component: {fileID: 547695196}
   - component: {fileID: 547695195}
   - component: {fileID: 547695197}
+  - component: {fileID: 547695199}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1735,7 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1110e01449d833428fa4fa051fbcc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   rb: {fileID: 547695195}
   Item: {fileID: 2129455578}
   GetItem: 0
@@ -1779,6 +1780,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547695199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547695194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e186c6ff7c6cb4e8dc36dec8bd1a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overPlayer: {fileID: 1433947785}
+  rigid: {fileID: 547695195}
 --- !u!1 &650399720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,10 +2213,17 @@ Transform:
   m_GameObject: {fileID: 944243466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: -3.4890804, y: 3.1488857, z: -9.9}
 =======
   m_LocalPosition: {x: -3.5765057, y: 3.1488857, z: -9.9}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+  m_LocalPosition: {x: -11.269691, y: 3.1488857, z: -9.9}
+=======
+  m_LocalPosition: {x: -3.4890804, y: 3.1488857, z: -9.9}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3032,10 +3054,17 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SensorSize: {x: 2.3265307, y: 1}
 =======
     m_SensorSize: {x: 2.3090453, y: 1}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    m_SensorSize: {x: 0.77040815, y: 1}
+=======
+    m_SensorSize: {x: 2.3265307, y: 1}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

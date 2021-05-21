@@ -21,6 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootView: {fileID: 6}
 =======
 <<<<<<< HEAD
@@ -29,6 +30,12 @@ MonoBehaviour:
 =======
   m_RootView: {fileID: 2}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+  m_RootView: {fileID: 7}
+=======
+  m_RootView: {fileID: 6}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_MinSize: {x: 875, y: 542}
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
   m_MaxSize: {x: 10000, y: 10000}
@@ -41,13 +48,39 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 909
+    y: 0
+    width: 304
+    height: 434
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
+  - {fileID: 10}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -56,6 +89,15 @@ MonoBehaviour:
     width: 1524
     height: 717
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
+  vertical: 0
+  controlID: 68
+--- !u!114 &4
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
@@ -74,6 +116,7 @@ MonoBehaviour:
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
 --- !u!114 &3
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,6 +132,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    x: 1213
+    y: 0
+    width: 309
+    height: 717
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     x: 1215
 =======
 <<<<<<< HEAD
@@ -105,10 +159,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4002, y: 4021}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
   m_ActualView: {fileID: 14}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -121,7 +177,12 @@ MonoBehaviour:
   m_LastLoadedLayoutName: 
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+--- !u!114 &5
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 --- !u!114 &4
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,11 +204,12 @@ MonoBehaviour:
     height: 434
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -158,7 +220,12 @@ MonoBehaviour:
   m_MaxSize: {x: 0, y: 0}
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+--- !u!114 &6
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 --- !u!114 &5
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,6 +244,21 @@ MonoBehaviour:
 <<<<<<< HEAD
     y: 434
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    width: 1213
+    height: 283
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &7
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     width: 1215
     height: 283
   m_MinSize: {x: 231, y: 271}
@@ -209,6 +291,7 @@ MonoBehaviour:
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
 --- !u!114 &6
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -221,18 +304,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 7}
-  - {fileID: 2}
   - {fileID: 8}
+  - {fileID: 3}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    width: 1522
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     width: 1524
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
     height: 767
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     width: 1522
@@ -248,7 +338,13 @@ MonoBehaviour:
   controlID: 4805
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+<<<<<<< HEAD
+--- !u!114 &8
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 --- !u!114 &7
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,15 +362,23 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1524
 =======
 <<<<<<< HEAD
     width: 1522
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    width: 1522
+=======
+    width: 1524
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -286,7 +390,12 @@ MonoBehaviour:
   controlID: 4806
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+--- !u!114 &9
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 --- !u!114 &8
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,6 +418,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
     y: 0
@@ -323,7 +433,12 @@ MonoBehaviour:
   m_LastSelected: 0
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+--- !u!114 &10
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 --- !u!114 &9
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -336,14 +451,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
+  - {fileID: 11}
+  - {fileID: 6}
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    width: 1213
+    height: 717
+  m_MinSize: {x: 604, y: 492}
+  m_MaxSize: {x: 12004, y: 14042}
+  vertical: 1
+  controlID: 69
+--- !u!114 &11
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     width: 1215
     height: 717
   m_MinSize: {x: 402, y: 492}
@@ -374,6 +500,7 @@ MonoBehaviour:
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
 --- !u!114 &10
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -387,13 +514,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 4}
-  - {fileID: 11}
+  - {fileID: 5}
+  - {fileID: 12}
+  - {fileID: 2}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    width: 1213
+    height: 434
+  m_MinSize: {x: 604, y: 221}
+  m_MaxSize: {x: 12004, y: 4021}
+  vertical: 0
+  controlID: 110
+--- !u!114 &12
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     width: 1215
     height: 434
   m_MinSize: {x: 402, y: 221}
@@ -409,6 +548,7 @@ MonoBehaviour:
   controlID: 37
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
 --- !u!114 &11
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -426,6 +566,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    x: 300
+    y: 0
+    width: 609
+    height: 434
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     x: 301
     y: 0
     width: 914
@@ -433,6 +584,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     x: 300
@@ -452,9 +604,17 @@ MonoBehaviour:
   m_ActualView: {fileID: 16}
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_Panes:
-  - {fileID: 16}
   - {fileID: 17}
+<<<<<<< HEAD
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
+=======
   - {fileID: 12}
 <<<<<<< HEAD
   m_Selected: 0
@@ -464,6 +624,7 @@ MonoBehaviour:
   m_LastSelected: 0
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
 --- !u!114 &12
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,7 +651,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -514,10 +675,17 @@ MonoBehaviour:
     x: 7.2000003
     y: 514.4
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1214
 =======
     width: 1209
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    width: 1212
+=======
+    width: 1214
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     height: 262
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -539,21 +707,33 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/gazou
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\K018A1407\Documents\2021GameAward\2021GameAward
+  m_LastProjectPath: "C:\\\u5236\u4F5C2021GameAward\\2021GameAward"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 1e3e0000
+    m_LastClickedID: 15902
+    m_ExpandedIDs: 00000000fe3d0000003e0000023e0000043e000000ca9a3b
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     scrollPos: {x: 0, y: 18}
     m_SelectedIDs: 2e3b0000
     m_LastClickedID: 15150
     m_ExpandedIDs: 00000000203b0000223b0000243b0000263b0000283b000000ca9a3b
+<<<<<<< HEAD
 =======
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 123e0000
     m_LastClickedID: 15890
     m_ExpandedIDs: 00000000fe3d0000003e0000023e0000043e00001445000000ca9a3b
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Fade
@@ -625,7 +805,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 4}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -637,7 +817,11 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
+<<<<<<< HEAD
+--- !u!114 &15
+=======
 --- !u!114 &14
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -655,6 +839,9 @@ MonoBehaviour:
 --- !u!114 &12
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -676,6 +863,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1222.4
     y: 80.8
     width: 308
@@ -685,6 +873,16 @@ MonoBehaviour:
     y: 80.8
     width: 310
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    x: 1220
+    y: 80.8
+    width: 307
+=======
+    x: 1222.4
+    y: 80.8
+    width: 308
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     height: 696
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -698,8 +896,13 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
+<<<<<<< HEAD
+  m_LastVerticalScrollValue: 547
+--- !u!114 &16
+=======
   m_LastVerticalScrollValue: 0
 --- !u!114 &15
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -776,6 +979,9 @@ MonoBehaviour:
 --- !u!114 &13
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -803,9 +1009,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
+      scrollPos: {x: 0, y: 265}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
       m_ExpandedIDs: 7406ffff8806ffff9c07ffffd208ffff080affff400bffff760cffff7a0cffff880cffff980cffff480fffff5c0fffff7010ffffa611ffffdc12ffff1414ffff4a15ffff4e15ffff5c15ffff6c15ffff3416ffff4816ffff5c17ffff9218ffffc819ffff001bffff361cffff3a1cffff481cffff581cffff2a1dffff3e1dffff461dffff7a1effffae1fffffe220ffff1622ffff1a22ffff2422ffff2e22ffff8a23ffff9e23ffffb224ffffe825ffff1e27ffff5628ffff8c29ffff9029ffff9e29ffffae29ffff4631ffff5a31ffff6231ffff9632ffffca33fffffe34ffff3236ffff3636ffff4036ffff4a36ffffa436ffffb836ffffcc37ffff0239ffff383affff703bffffa63cffffaa3cffffb83cffffc83cffff245affff385affff4c5bffff825cffffb85dfffff05effff2660ffff2a60ffff3860ffff4860ffffbc7dffffd07dffffe47effff1a80ffff5081ffff8882ffffbe83ffffc283ffffd083ffffe083ffff6e8bffff828bffff968cffffcc8dffff028fffff3a90ffff7091ffff7491ffff8291ffff9291ffffc09fffff82caffff56ccffff7ccdffffbaceffff6afbffff5e080100328e010036c20100f8c30100
 =======
@@ -815,6 +1022,12 @@ MonoBehaviour:
       m_ExpandedIDs: bad6ffffced6ffffd4d7ffff04d9ffff34daffff66dbffff96dcffffe4ddffffecddfffff0ddffffe2dffffff6dffffffce0ffff2ce2ffff5ce3ffff8ee4ffffbee5ffff0ce7ffff14e7ffff18e7ffff4cf6ffff88f7ffff60f8ffffd8420000ec42000008430000fe5a0000
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+      m_ExpandedIDs: b6e8ffffd6e9ffffe6e9ffff1eebffff56ecffff8eedffffc6eeffffdef1ffff94f6ffff9cf6ffff40faffff60fbffffea5300004254000056540000
+=======
+      m_ExpandedIDs: 7406ffff8806ffff9c07ffffd208ffff080affff400bffff760cffff7a0cffff880cffff980cffff480fffff5c0fffff7010ffffa611ffffdc12ffff1414ffff4a15ffff4e15ffff5c15ffff6c15ffff3416ffff4816ffff5c17ffff9218ffffc819ffff001bffff361cffff3a1cffff481cffff581cffff2a1dffff3e1dffff461dffff7a1effffae1fffffe220ffff1622ffff1a22ffff2422ffff2e22ffff8a23ffff9e23ffffb224ffffe825ffff1e27ffff5628ffff8c29ffff9029ffff9e29ffffae29ffff4631ffff5a31ffff6231ffff9632ffffca33fffffe34ffff3236ffff3636ffff4036ffff4a36ffffa436ffffb836ffffcc37ffff0239ffff383affff703bffffa63cffffaa3cffffb83cffffc83cffff245affff385affff4c5bffff825cffffb85dfffff05effff2660ffff2a60ffff3860ffff4860ffffbc7dffffd07dffffe47effff1a80ffff5081ffff8882ffffbe83ffffc283ffffd083ffffe083ffff6e8bffff828bffff968cffffcc8dffff028fffff3a90ffff7091ffff7491ffff8291ffff9291ffffc09fffff82caffff56ccffff7ccdffffbaceffff6afbffff5e080100328e010036c20100f8c30100
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: Player
@@ -831,6 +1044,7 @@ MonoBehaviour:
         m_OriginalEventType: 0
         m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 4}
 =======
 <<<<<<< HEAD
@@ -839,12 +1053,19 @@ MonoBehaviour:
         m_ClientGUIView: {fileID: 8}
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+        m_ClientGUIView: {fileID: 0}
+=======
+        m_ClientGUIView: {fileID: 4}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_WindowGUID: 5cdfd2ba7b67f584786c04d13dc738b1
 --- !u!114 &16
@@ -857,6 +1078,14 @@ MonoBehaviour:
 --- !u!114 &14
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+  m_WindowGUID: 2f471f57881507a42992b3c79c6805a5
+--- !u!114 &17
+=======
+  m_WindowGUID: 5cdfd2ba7b67f584786c04d13dc738b1
+--- !u!114 &16
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -880,11 +1109,21 @@ MonoBehaviour:
     x: 308
     y: 80.8
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    width: 607
+    height: 413
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 2af132a8a3f1853468deb2f8f1254fce
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     width: 912
     height: 413
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 105223865eac24449a0b48224da56e26
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     width: 911
@@ -900,6 +1139,9 @@ MonoBehaviour:
   m_WindowGUID: c2dbf9612908c304997a212d74bd6303
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -909,6 +1151,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 18.33736, y: 3, z: -9.9}
     speed: 2
     m_Value: {x: 18.33736, y: 3, z: -9.9}
@@ -917,6 +1160,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    m_Target: {x: -4.514211, y: 5.0843368, z: -7.934409}
+    speed: 2
+    m_Value: {x: -4.514211, y: 5.0843368, z: -7.934409}
+=======
+    m_Target: {x: 18.33736, y: 3, z: -9.9}
+    speed: 2
+    m_Value: {x: 18.33736, y: 3, z: -9.9}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -966,9 +1219,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 10.598109
     speed: 2
-    m_Value: 10
+    m_Value: 10.598109
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -993,6 +1246,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &17
 =======
@@ -1028,6 +1282,12 @@ MonoBehaviour:
 --- !u!114 &16
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+--- !u!114 &18
+=======
+--- !u!114 &17
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1049,6 +1309,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 308
     y: 80.8
     width: 912
@@ -1058,6 +1319,16 @@ MonoBehaviour:
     y: 80.8
     width: 908
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    x: 916
+    y: 80.8
+    width: 302
+=======
+    x: 308
+    y: 80.8
+    width: 912
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     height: 413
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -1069,10 +1340,17 @@ MonoBehaviour:
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 912, y: 392}
 =======
   m_TargetSize: {x: 908, y: 392}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+  m_TargetSize: {x: 302, y: 392}
+=======
+  m_TargetSize: {x: 912, y: 392}
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1087,12 +1365,21 @@ MonoBehaviour:
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -364.80002
     m_HBaseRangeMax: 364.80002
 =======
     m_HBaseRangeMin: -363.2
     m_HBaseRangeMax: 363.2
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+    m_HBaseRangeMin: -120.8
+    m_HBaseRangeMax: 120.8
+=======
+    m_HBaseRangeMin: -364.80002
+    m_HBaseRangeMax: 364.80002
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     m_VBaseRangeMin: -156.8
     m_VBaseRangeMax: 156.8
     m_HAllowExceedBaseRangeMin: 1
@@ -1113,16 +1400,28 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      width: 302
+      height: 392
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 151, y: 196}
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
       width: 912
       height: 392
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 456, y: 196}
+<<<<<<< HEAD
 =======
       width: 908
       height: 392
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 454, y: 196}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1130,6 +1429,17 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      x: -151
+      y: -196
+      width: 302
+      height: 392
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 377.5, y: 516.25}
+=======
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
       x: -456
       y: -196
       width: 912
@@ -1137,6 +1447,7 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1140, y: 516.25}
+<<<<<<< HEAD
 =======
       x: -454
       y: -196
@@ -1146,12 +1457,19 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1135, y: 516.25}
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+<<<<<<< HEAD
+--- !u!114 &19
+=======
 --- !u!114 &18
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 =======
@@ -1273,6 +1591,9 @@ MonoBehaviour:
 --- !u!114 &17
 >>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
 >>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
+=======
+>>>>>>> 5c1d992508918962c0a65ea28517b6d7fbd5721a
+>>>>>>> a440270503f7572f46e52231471910f8764c8ae3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
