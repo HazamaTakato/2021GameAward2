@@ -196,7 +196,8 @@ public class SphereStage2 : MonoBehaviour
         {
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
-            SceneManager.LoadScene("GameScene4");
+            //SceneManager.LoadScene("GameScene4");
+            FadeManager.Instance.LoadScene("GameScene4", 0.05f);
         }
         if(other.tag=="lever")
         {

@@ -345,7 +345,8 @@ public class SphereStage5 : MonoBehaviour
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
-            SceneManager.LoadScene("EndingScene");
+            //SceneManager.LoadScene("EndingScene");
+            FadeManager.Instance.LoadScene("EndingScene", 0.1f);
         }
         if (other.tag == "lever")
         {

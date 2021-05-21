@@ -22,6 +22,7 @@ public class Sphere : MonoBehaviour
     public GameObject[] block2;
     PlayerItem playerItem;
     float keyTimelimit;
+    bool goalF;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class Sphere : MonoBehaviour
         keyTimelimit = 0;
         PlayerItem.GetItem = false;
         PlayerItem.DropItem = false;
+        goalF = false;
     }
 
     // Update is called once per frame
@@ -178,6 +180,17 @@ public class Sphere : MonoBehaviour
         //    hitflag = false;
         //    GetItem = false;
         //}
+        if (goalF)
+        {
+            rb.velocity = new Vector3(0, 0, 0);
+            rb.useGravity = false;
+            this.transform.localPosition = new Vector3(26.97f, 0.04f, 0);
+            this.transform.localScale -= new Vector3(0.025f, 0.025f, 0.025f);
+            if (transform.localScale.x <= 0.0f)
+            {
+                transform.localScale = new Vector3(0, 0, 0);
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -198,7 +211,9 @@ public class Sphere : MonoBehaviour
         {
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
-            SceneManager.LoadScene("GameScene3");
+            goalF = true;
+            //SceneManager.LoadScene("GameScene3");
+            FadeManager.Instance.LoadScene("GameScene3", 1.0f);
         }
     }
 
