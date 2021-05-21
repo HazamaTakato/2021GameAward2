@@ -14,14 +14,19 @@ public class TItleScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown("joystick button 1"))
-        {
-            ChangeScene();
-        }
+        //if(Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown("joystick button 1"))
+        //{
+        //    ChangeScene();
+        //}
     }
 
     void ChangeScene()
     {
         SceneManager.LoadScene("SelectScene");
+    }
+
+    public void TitleSerect()
+    {
+        ChangeScene();
     }
 }

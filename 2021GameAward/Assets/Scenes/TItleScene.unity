@@ -222,7 +222,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1024, y: 768}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &833584995
 MonoBehaviour:
@@ -422,8 +422,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1402950539}
-        m_MethodName: Select
+      - m_Target: {fileID: 1402950542}
+        m_MethodName: EndSerect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -919,8 +919,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1845557517}
-        m_MethodName: Select
+      - m_Target: {fileID: 1845557520}
+        m_MethodName: TitleSerect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

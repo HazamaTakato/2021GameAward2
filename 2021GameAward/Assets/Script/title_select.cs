@@ -6,16 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class title_select : MonoBehaviour
 {
-    Button button_title;
-    Button button_end;
-
+    Button Button_start;
     // Start is called before the first frame update
     void Start()
     {
-        button_title = GameObject.Find("/Canvas/Button_start").GetComponent<Button>();
-        button_end = GameObject.Find("/Canvas/Button_end").GetComponent<Button>();
-
-        button_title.Select();
+        Button_start = GameObject.Find("Button_start").GetComponent<Button>();
+        Button_start.Select();
     }
 
     
