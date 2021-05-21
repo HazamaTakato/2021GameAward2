@@ -16,13 +16,16 @@ public class Select : MonoBehaviour
     {
         if (!SceneChange)
             return;
-        time += Time.deltaTime;
-        if (time > 0.5f)
-        {
+        //time += Time.deltaTime;
+        //if (time > 0.5f)
+        //{
             if (BackTitle)
-                SceneManager.LoadScene("TitleScene");
-            SceneManager.LoadScene("GameScene" + scenename[number]);
-        }
+                //SceneManager.LoadScene("TitleScene");
+                FadeManager.Instance.LoadScene("TitleScene", 0.05f);
+            //SceneManager.LoadScene("GameScene" + scenename[number]);
+            else
+            FadeManager.Instance.LoadScene("GameScene" + scenename[number], 0.1f);
+        //}
     }
 
     public void OnClick()
