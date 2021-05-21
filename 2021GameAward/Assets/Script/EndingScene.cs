@@ -22,6 +22,7 @@ public class EndingScene : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("TItleScene");
+        //SceneManager.LoadScene("TItleScene");
+        FadeManager.Instance.LoadScene("TItleScene", 0.1f);
     }
 }

@@ -198,7 +198,8 @@ public class Sphere : MonoBehaviour
         {
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
-            SceneManager.LoadScene("GameScene3");
+            //SceneManager.LoadScene("GameScene3");
+            FadeManager.Instance.LoadScene("GameScene3", 0.05f);
         }
     }
 

@@ -360,7 +360,8 @@ public class SphereStage3 : MonoBehaviour
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
-            SceneManager.LoadScene("GameScene5");
+            //SceneManager.LoadScene("GameScene5");
+            FadeManager.Instance.LoadScene("GameScene5", 0.05f);
         }
         //if (other.tag == "lever")
         //{

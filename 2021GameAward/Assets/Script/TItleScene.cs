@@ -22,7 +22,8 @@ public class TItleScene : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("SelectScene");
+        //SceneManager.LoadScene("SelectScene");
+        FadeManager.Instance.LoadScene("SelectScene",0.1f);
     }
 
     public void TitleSerect()
