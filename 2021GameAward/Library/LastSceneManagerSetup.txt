@@ -1,5 +1,13 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/GameScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/SelectScene.unity
+=======
+- path: Assets/Scenes/TItleScene.unity
+>>>>>>> df242bb53cacf05e61dc36d21637a0262187368f
+>>>>>>> parent of ce28062... 上る動作にアシスト的な機能追加、大体大きくすれば登れるようになります
   isLoaded: 1
   isActive: 1
   isSubScene: 0
