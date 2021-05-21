@@ -202,11 +202,13 @@ public class SphereStage4 : MonoBehaviour
             this.transform.position = valve.transform.position;
             if(Input.GetKey(KeyCode.D)&&valve.transform.localPosition.x<=-3)
             {
+                valve.transform.Rotate(0, 0, 0.1f);
                 valve.transform.localPosition += new Vector3(0.004f, 0, 0);
                 valveblock.transform.localPosition += new Vector3(0.004f, 0, 0);
             }
             if(Input.GetKey(KeyCode.A)&&valve.transform.localPosition.x>=-9.17f)
             {
+                valve.transform.Rotate(0, 0, -0.1f);
                 valve.transform.localPosition -= new Vector3(0.004f, 0, 0);
                 valveblock.transform.localPosition -= new Vector3(0.004f, 0, 0);
             }
