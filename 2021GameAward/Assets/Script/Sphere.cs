@@ -182,7 +182,7 @@ public class Sphere : MonoBehaviour
         //    hitflag = false;
         //    GetItem = false;
         //}
-        if (goalF)
+        if (Goal.GoalF)
         {
             rb.velocity = new Vector3(0, 0, 0);
             rb.useGravity = false;
@@ -213,7 +213,7 @@ public class Sphere : MonoBehaviour
         {
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
-            goalF = true;
+            Goal.GoalF = true;
             //SceneManager.LoadScene("GameScene3");
             FadeManager.Instance.LoadScene("GameScene3", 1.0f);
         }

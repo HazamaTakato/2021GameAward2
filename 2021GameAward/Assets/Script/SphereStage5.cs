@@ -298,7 +298,7 @@ public class SphereStage5 : MonoBehaviour
                 button3block.transform.localPosition += new Vector3(0, 0.005f, 0);
             }
         }
-        if (goalF)
+        if (Goal.GoalF)
         {
             rb.velocity = new Vector3(0, 0, 0);
             rb.useGravity = false;
@@ -361,7 +361,7 @@ public class SphereStage5 : MonoBehaviour
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
             IsGoal = true;
-            goalF = true;
+            Goal.GoalF = true;
             //SceneManager.LoadScene("EndingScene");
             FadeManager.Instance.LoadScene("EndingScene", 1.0f);
         }

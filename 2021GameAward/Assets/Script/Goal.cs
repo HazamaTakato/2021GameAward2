@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
-    PlayerItem playerItem;
+    public float RoteSpeed;
+    public static bool GoalF;
     // Start is called before the first frame update
     void Start()
     {
-        playerItem = GetComponent<PlayerItem>();
+        RoteSpeed = 8;
+        GoalF = false;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if(PlayerItem.GetItem)
+        if(PlayerItem.GetItem||GoalF)
         {
-            transform.Rotate(new Vector3(0, 0, -5));
+            transform.Rotate(new Vector3(0, 0, RoteSpeed));
         }
     }
 }

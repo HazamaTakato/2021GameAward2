@@ -179,7 +179,7 @@ public class SphereStage2 : MonoBehaviour
         //{
         //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //}
-        if (goalF)
+        if (Goal.GoalF)
         {
             rb.velocity = new Vector3(0, 0, 0);
             rb.useGravity = false;
@@ -211,7 +211,7 @@ public class SphereStage2 : MonoBehaviour
         {
             PlayerItem.GetItem = false;
             PlayerItem.DropItem = false;
-            goalF = true;
+            Goal.GoalF = true;
             //SceneManager.LoadScene("GameScene4");
             FadeManager.Instance.LoadScene("GameScene4", 1.0f);
         }
