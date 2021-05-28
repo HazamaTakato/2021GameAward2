@@ -210,15 +210,15 @@ public class SphereStage3 : MonoBehaviour
             this.transform.position = valve.transform.position;
             if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.y >= 0.7f || Input.GetAxis("Horizontal") > 0 && valve.transform.localPosition.y >= 0.7f)
             {
-                valve.transform.Rotate(0, 0, 0.1f);
-                valve.transform.localPosition -= new Vector3(0, 0.01f, 0);
-                valveblock.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                valve.transform.Rotate(0, 0, 1.0f);
+                valve.transform.localPosition -= new Vector3(0, 0.05f, 0);
+                valveblock.transform.localPosition -= new Vector3(0, 0.05f, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve.transform.localPosition.y <= 10.5f || Input.GetAxis("Horizontal") < 0 && valve.transform.localPosition.y <= 10.5f)
             {
-                valve.transform.Rotate(0, 0, -0.1f);
-                valve.transform.localPosition += new Vector3(0, 0.01f, 0);
-                valveblock.transform.localPosition += new Vector3(0, 0.01f, 0);
+                valve.transform.Rotate(0, 0, -1.0f);
+                valve.transform.localPosition += new Vector3(0, 0.05f, 0);
+                valveblock.transform.localPosition += new Vector3(0, 0.05f, 0);
             }
         }
         if (getValve2)
@@ -226,15 +226,15 @@ public class SphereStage3 : MonoBehaviour
             this.transform.position = valve2.transform.position;
             if (Input.GetKey(KeyCode.D) && valve2.transform.localPosition.y >= 0.7f || Input.GetAxis("Horizontal") > 0 && valve2.transform.localPosition.y >= 0.7f)
             {
-                valve2.transform.Rotate(0, 0, 0.1f);
-                valve2.transform.localPosition -= new Vector3(0, 0.01f, 0);
-                valveblock2.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                valve2.transform.Rotate(0, 0, 1.0f);
+                valve2.transform.localPosition -= new Vector3(0, 0.05f, 0);
+                valveblock2.transform.localPosition -= new Vector3(0, 0.05f, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 9.6f || Input.GetAxis("Horizontal") < 0 && valve2.transform.localPosition.y <= 9.6f)
             {
-                valve2.transform.Rotate(0, 0, -0.1f);
-                valve2.transform.localPosition += new Vector3(0, 0.01f, 0);
-                valveblock2.transform.localPosition += new Vector3(0, 0.01f, 0);
+                valve2.transform.Rotate(0, 0, -1.0f);
+                valve2.transform.localPosition += new Vector3(0, 0.05f, 0);
+                valveblock2.transform.localPosition += new Vector3(0, 0.05f, 0);
             }
         }
         if (getValve3)
@@ -245,15 +245,15 @@ public class SphereStage3 : MonoBehaviour
             //fallblock.transform.localPosition -= new Vector3(0, 0.002f, 0);
             if (Input.GetKey(KeyCode.D) && valve3.transform.localPosition.y >= 0.5f || Input.GetAxis("Horizontal") > 0 && valve3.transform.localPosition.y >= 0.5f)
             {
-                valve3.transform.Rotate(0, 0, 0.1f);
-                valve3.transform.localPosition -= new Vector3(0, 0.01f, 0);
-                valveblock3.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                valve3.transform.Rotate(0, 0, 1.0f);
+                valve3.transform.localPosition -= new Vector3(0, 0.05f, 0);
+                valveblock3.transform.localPosition -= new Vector3(0, 0.05f, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve3.transform.localPosition.y <= 9.6f || Input.GetAxis("Horizontal") < 0 && valve3.transform.localPosition.y <= 9.6f)
             {
-                valve3.transform.Rotate(0, 0, -0.1f);
-                valve3.transform.localPosition += new Vector3(0, 0.01f, 0);
-                valveblock3.transform.localPosition += new Vector3(0, 0.01f, 0);
+                valve3.transform.Rotate(0, 0, -1.0f);
+                valve3.transform.localPosition += new Vector3(0, 0.05f, 0);
+                valveblock3.transform.localPosition += new Vector3(0, 0.05f, 0);
             }
             //}
             //if (lever2ON)
@@ -278,15 +278,15 @@ public class SphereStage3 : MonoBehaviour
             this.transform.position = valve4.transform.position;
             if (Input.GetKey(KeyCode.D) && valve4.transform.localPosition.y >= 0.6f || Input.GetAxis("Horizontal") > 0 && valve4.transform.localPosition.y >= 0.6f)
             {
-                valve4.transform.Rotate(0, 0, 0.1f);
-                valve4.transform.localPosition -= new Vector3(0, 0.01f, 0);
-                valveblock4.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                valve4.transform.Rotate(0, 0, 1.0f);
+                valve4.transform.localPosition -= new Vector3(0, 0.05f, 0);
+                valveblock4.transform.localPosition -= new Vector3(0, 0.05f, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve4.transform.localPosition.y <= 5.7f || Input.GetAxis("Horizontal") < 0 && valve4.transform.localPosition.y <= 5.7f)
             {
-                valve4.transform.Rotate(0, 0, -0.1f);
-                valve4.transform.localPosition += new Vector3(0, 0.01f, 0);
-                valveblock4.transform.localPosition += new Vector3(0, 0.01f, 0);
+                valve4.transform.Rotate(0, 0, -1.0f);
+                valve4.transform.localPosition += new Vector3(0, 0.05f, 0);
+                valveblock4.transform.localPosition += new Vector3(0, 0.05f, 0);
             }
         }
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown("joystick button 3"))
@@ -308,7 +308,7 @@ public class SphereStage3 : MonoBehaviour
             buttontouch = true;
             if (buttonblock.transform.localPosition.y >= -6.8)
             {
-                buttonblock.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                buttonblock.transform.localPosition -= new Vector3(0, 0.1f, 0);
             }
         }
         if (!buttonON)
@@ -317,14 +317,14 @@ public class SphereStage3 : MonoBehaviour
             {
                 if (buttonblock.transform.localPosition.y <= -1.12f)
                 {
-                    buttonblock.transform.localPosition += new Vector3(0, 0.001f, 0);
+                    buttonblock.transform.localPosition += new Vector3(0, 0.01f, 0);
                 }
             }
             if (PlayerItem.GetItem && buttontouch)
             {
                 if (buttonblock.transform.localPosition.y <= 3.776f)
                 {
-                    buttonblock.transform.localPosition += new Vector3(0, 0.001f, 0);
+                    buttonblock.transform.localPosition += new Vector3(0, 0.01f, 0);
                 }
             }
         }
@@ -370,7 +370,7 @@ public class SphereStage3 : MonoBehaviour
         {
             buttonON = true;
             //button.transform.localPosition = new Vector3(13.76f, 6.45f, 0);
-            button.transform.localPosition = new Vector3(-0.6f, 0, 10);
+            button.transform.localPosition = new Vector3(-0.4f, 0, 10);
         }
         if (other.tag == "Goal" && PlayerItem.GetItem)
         {

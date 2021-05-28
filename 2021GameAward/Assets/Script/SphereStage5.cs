@@ -211,12 +211,12 @@ public class SphereStage5 : MonoBehaviour
         if (getValve)
         {
             this.transform.position = valve.transform.position;
-            if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.y <= -3.5f || Input.GetAxis("Horizontal") > 0 && valve.transform.localPosition.y <= -3.5f)
+            if (Input.GetKey(KeyCode.A) && valve.transform.localPosition.y <= -3.5f || Input.GetAxis("Horizontal") > 0 && valve.transform.localPosition.y <= -3.5f)
             {
                 valve.transform.localPosition += new Vector3(0, 0.01f, 0);
                 valveblock.transform.localPosition += new Vector3(0, 0.01f, 0);
             }
-            if (Input.GetKey(KeyCode.A) && valve.transform.localPosition.y >= -6.8f || Input.GetAxis("Horizontal") < 0 && valve.transform.localPosition.y >= -6.8f)
+            if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.y >= -6.8f || Input.GetAxis("Horizontal") < 0 && valve.transform.localPosition.y >= -6.8f)
             {
                 valve.transform.localPosition -= new Vector3(0, 0.01f, 0);
                 valveblock.transform.localPosition -= new Vector3(0, 0.01f, 0);
