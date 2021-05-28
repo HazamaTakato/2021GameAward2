@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ControllerInputModule
     - EndingScene
     - FadeManager
     - Game_end
@@ -92,6 +93,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14110}
     - Class: 114
       Script: {instanceID: 14620}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -203,6 +206,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14620}
     - Class: 114
       Script: {instanceID: 14666}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -324,6 +329,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14620}
     - Class: 114
       Script: {instanceID: 14666}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -447,6 +454,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14620}
     - Class: 114
       Script: {instanceID: 14666}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -568,6 +577,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14620}
     - Class: 114
       Script: {instanceID: 14666}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -691,6 +702,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14620}
     - Class: 114
       Script: {instanceID: 14666}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -754,6 +767,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13950}
     - Class: 114
       Script: {instanceID: 14620}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -811,6 +826,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13950}
     - Class: 114
       Script: {instanceID: 14620}
+    - Class: 114
+      Script: {instanceID: 17336}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1800,6 +1817,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8f0cebda8c1f48f95eba0a61fb229b67
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControllerInputModule
   platform: 5
   scenePathNames:
   - Assets/Scenes/TItleScene.unity

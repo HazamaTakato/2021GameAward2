@@ -1517,6 +1517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367d2988b7306dd448b4b4cd76f74c98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RoteSpeed: 0
 --- !u!1 &337888458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2226,7 +2227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 944243466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.455065, y: 3.1488857, z: -9.9}
+  m_LocalPosition: {x: -6.2328434, y: 3.1488857, z: -9.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2745,6 +2746,7 @@ GameObject:
   - component: {fileID: 1062395303}
   - component: {fileID: 1062395302}
   - component: {fileID: 1062395301}
+  - component: {fileID: 1062395304}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2800,6 +2802,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1062395304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062395300}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ccd9161efd6ee409ff96fd8fc71ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Fire1
+  m_VerticalAxis: right
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
 --- !u!1 &1107216377
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,7 +3075,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
