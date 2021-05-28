@@ -208,13 +208,13 @@ public class SphereStage4 : MonoBehaviour
             this.transform.position = valve.transform.position;
             if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.x <= -3 || Input.GetAxis("Horizontal") > 0 && valve.transform.localPosition.x <= -3)
             {
-                valve.transform.Rotate(0, 0, 0.1f);
+                valve.transform.Rotate(0, 0, 1.2f);
                 valve.transform.localPosition += new Vector3(0.01f, 0, 0);
                 valveblock.transform.localPosition += new Vector3(0.01f, 0, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve.transform.localPosition.x >= -9.17f || Input.GetAxis("Horizontal") < 0 && valve.transform.localPosition.x >= -9.17f)
             {
-                valve.transform.Rotate(0, 0, -0.1f);
+                valve.transform.Rotate(0, 0, -1.2f);
                 valve.transform.localPosition -= new Vector3(0.01f, 0, 0);
                 valveblock.transform.localPosition -= new Vector3(0.01f, 0, 0);
             }
@@ -236,15 +236,15 @@ public class SphereStage4 : MonoBehaviour
             this.transform.position = valve2.transform.position;
             if (Input.GetKey(KeyCode.D) && valve2.transform.localPosition.y >= 0.7f || Input.GetAxis("Horizontal") > 0 && valve2.transform.localPosition.y >= 0.7f)
             {
-                valve2.transform.Rotate(0, 0, 0.1f);
-                valve2.transform.localPosition -= new Vector3(0, 0.01f, 0);
-                valveblock2.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                valve2.transform.Rotate(0, 0, 1.2f);
+                valve2.transform.localPosition -= new Vector3(0, 0.03f, 0);
+                valveblock2.transform.localPosition -= new Vector3(0, 0.03f, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 10.5f || Input.GetAxis("Horizontal") < 0 && valve2.transform.localPosition.y <= 9.6f)
             {
-                valve2.transform.Rotate(0, 0, -0.1f);
-                valve2.transform.localPosition += new Vector3(0, 0.01f, 0);
-                valveblock2.transform.localPosition += new Vector3(0, 0.01f, 0);
+                valve2.transform.Rotate(0, 0, -1.2f);
+                valve2.transform.localPosition += new Vector3(0, 0.03f, 0);
+                valveblock2.transform.localPosition += new Vector3(0, 0.03f, 0);
             }
         }
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown("joystick button 3"))
