@@ -10,19 +10,27 @@ enum DIRECTION
 public class PlayerClimb : MonoBehaviour
 {
     List<GameObject> blocks = new List<GameObject>();
-    Ray ray;
+    Ray frontRay;
+    Ray underRay;
     Ray topray;
-    int distance;
+    float distance;
+    float num;
+    float underDistance;
     float distanceTopray;
     public GameObject overPlayer;
     public Rigidbody rigid;
     float playerSize;
     Vector3 vec;
     DIRECTION direction;
+    bool onAssist;
+    bool sizecheck;
+
     // Start is called before the first frame update
     void Start()
     {
-        distance = 1;
+        distance = 0.5f;
+        underDistance = 0.35f;
+        num = underDistance;
         distanceTopray = 0.6f;
         overPlayer.GetComponent<GameObject>();
         rigid.GetComponent<Rigidbody>();
@@ -34,69 +42,60 @@ public class PlayerClimb : MonoBehaviour
     {
         playerSize = overPlayer.transform.localScale.x;
 
-        if (Input.GetKey(KeyCode.A) && rigid.velocity.x <= 0)
+        if (Input.GetAxis("Horizontal") < 0 && rigid.velocity.x < 0)
         {
             direction = DIRECTION.LEFT;
         }
-        else if (Input.GetKey(KeyCode.D) && rigid.velocity.x >= 0)
+        else if (Input.GetAxis("Horizontal") > 0 && rigid.velocity.x > 0)
         {
             direction = DIRECTION.RIGHT;
         }
         if (direction == DIRECTION.RIGHT)
+        {
+
             //vec = new Vector3(1,0,0);
-            ray = new Ray(new Vector3(transform.position.x + ((playerSize - 1) / 2), transform.position.y - 0.0f), new Vector3(1, 0, 0));
+            frontRay = new Ray(new Vector3(transform.position.x + ((playerSize) / 2), transform.position.y), new Vector3(1, 0, 0));
+            underRay = new Ray(new Vector3(transform.position.x + ((playerSize) / 2), transform.position.y), new Vector3(0, -1, 0));
+        }
         else
+        {
             //vec = new Vector3(-1, 0, 0);
-            ray = new Ray(new Vector3(transform.position.x - ((playerSize - 1) / 2), transform.position.y - 0.0f), new Vector3(-1, 0, 0));
+            frontRay = new Ray(new Vector3(transform.position.x - ((playerSize) / 2), transform.position.y), new Vector3(-1, 0, 0));
+            underRay = new Ray(new Vector3(transform.position.x - ((playerSize) / 2), transform.position.y), new Vector3(0, -1, 0));
+
+        }
+        underDistance = num + ((playerSize - 1) / 3);
 
         topray = new Ray(new Vector3(transform.position.x, transform.position.y + (playerSize - 1) / 2), new Vector3(0, 1, 0));
 
         RaycastHit hit;
-        Debug.DrawLine(ray.origin, ray.origin + ray.direction * distance, Color.yellow);
+        Debug.DrawLine(frontRay.origin, frontRay.origin + frontRay.direction * distance, Color.yellow);
         Debug.DrawLine(topray.origin, topray.origin + topray.direction * distanceTopray, Color.yellow);
+        Debug.DrawLine(underRay.origin, underRay.origin + underRay.direction * underDistance, Color.yellow);
 
-        if (Physics.Raycast(topray, out hit, distanceTopray))
-            //
-            //bool型でプレイヤーのサイズ変更許可入れる場所
-            //
-            return;
-        if (!Physics.Raycast(ray, out hit, distance))
+        if (Physics.Raycast(underRay, out hit, underDistance))
         {
-            if (blocks.Count > 1)
+            if (hit.collider.tag == "Item")
             {
-                if (direction == DIRECTION.RIGHT && Input.GetKey(KeyCode.D))
-                {
-                    if(rigid.velocity.x < 0)
-                    //rigid.AddForce(Input.GetAxis("Horizontal") * (4 * overPlayer.transform.localScale.x),
-                    //               Input.GetAxis("Horizontal") * (10 * overPlayer.transform.localScale.y), 0);
-                    rigid.velocity = new Vector3(1.5f * overPlayer.transform.localScale.x, 1.5f * overPlayer.transform.localScale.x, 0);
-                    //Debug.Log("assist");
-                }
-                else if (direction == DIRECTION.LEFT && Input.GetKey(KeyCode.A))
-                {
-                    if(rigid.velocity.x > 0)
-                    //rigid.AddForce(Input.GetAxis("Horizontal") * (4 * overPlayer.transform.localScale.x), 
-                    //               Input.GetAxis("Horizontal") * (-10 * overPlayer.transform.localScale.y), 0);
-                    rigid.velocity = new Vector3(-1.5f * overPlayer.transform.localScale.x, 1.5f * overPlayer.transform.localScale.x, 0);
-                    //Debug.Log("assist");
-                }
+                Debug.Log("a");
+            }
+            if (sizecheck)
+            {
+                onAssist = true;
+                if (Input.GetAxis("Horizontal") != 0)
+                    rigid.velocity = new Vector3(Input.GetAxis("Horizontal"), Mathf.Abs(Input.GetAxis("Horizontal")), 0); //overPlayer.transform.localScale.x, 0);
             }
         }
-    }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.transform.position.y < transform.position.y)
-            blocks.Add(other.gameObject);
-    }
-    private void OnCollisionExit(Collision other)
-    {
-        for (int i = 0; i < blocks.Count; i++)
+        //if (Physics.Raycast(topray, out hit, distanceTopray))
+        //    //
+        //    //bool型でプレイヤーのサイズ変更許可入れる場所
+        //    //
+        //    return;
+        sizecheck = false;
+        if (!Physics.Raycast(frontRay, out hit, distance))
         {
-            if (blocks[i].name == other.gameObject.name)
-            {
-                blocks.Remove(blocks[i]);
-            }
+            sizecheck = true;
         }
     }
 }

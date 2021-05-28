@@ -84,7 +84,7 @@ public class PlayerItem : MonoBehaviour
                 GetItem = true;
                 MyScale = new Vector3(Item.transform.localScale.x + 0.8f, Item.transform.localScale.y + 0.8f,1);
                 NormalPlayer.transform.localScale = MyScale;
-                OverPlayer.transform.localScale = new Vector3(MyScale.x + 0.1f, MyScale.y + 0.1f, MyScale.z);
+                OverPlayer.transform.localScale = new Vector3(MyScale.x , MyScale.y, MyScale.z);
             }
         }
     }
