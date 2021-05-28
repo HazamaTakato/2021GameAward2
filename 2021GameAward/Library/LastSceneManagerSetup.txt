@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SelectScene.unity
+=======
+- path: Assets/Scenes/EndingScene.unity
+>>>>>>> 5d0bd35579c81820dcf1140f5f145d0499c1500c
   isLoaded: 1
   isActive: 1
   isSubScene: 0

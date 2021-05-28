@@ -185,7 +185,7 @@ public class Sphere : MonoBehaviour
             rb.velocity = new Vector3(0, 0, 0);
             rb.useGravity = false;
             this.transform.localPosition = new Vector3(26.97f, 0.04f, 0);
-            this.transform.localScale -= new Vector3(0.025f, 0.025f, 0.025f);
+            this.transform.localScale -= new Vector3(0.015f, 0.015f, 0.015f);
             if (transform.localScale.x <= 0.0f)
             {
                 transform.localScale = new Vector3(0, 0, 0);

@@ -203,17 +203,17 @@ public class SphereStage4 : MonoBehaviour
         if (getValve)
         {
             this.transform.position = valve.transform.position;
-            if(Input.GetKey(KeyCode.D)&&valve.transform.localPosition.x<=-3)
+            if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.x <= -3 || Input.GetAxis("Horizontal") > 0 && valve.transform.localPosition.x <= -3)
             {
                 valve.transform.Rotate(0, 0, 0.1f);
-                valve.transform.localPosition += new Vector3(0.004f, 0, 0);
-                valveblock.transform.localPosition += new Vector3(0.004f, 0, 0);
+                valve.transform.localPosition += new Vector3(0.01f, 0, 0);
+                valveblock.transform.localPosition += new Vector3(0.01f, 0, 0);
             }
-            if(Input.GetKey(KeyCode.A)&&valve.transform.localPosition.x>=-9.17f)
+            if (Input.GetKey(KeyCode.A) && valve.transform.localPosition.x >= -9.17f || Input.GetAxis("Horizontal") < 0 && valve.transform.localPosition.x >= -9.17f)
             {
                 valve.transform.Rotate(0, 0, -0.1f);
-                valve.transform.localPosition -= new Vector3(0.004f, 0, 0);
-                valveblock.transform.localPosition -= new Vector3(0.004f, 0, 0);
+                valve.transform.localPosition -= new Vector3(0.01f, 0, 0);
+                valveblock.transform.localPosition -= new Vector3(0.01f, 0, 0);
             }
             //if (Input.GetKey(KeyCode.D) && valve.transform.localPosition.y >= 0.7f || Input.GetKey("joystick button 8") && valve.transform.localPosition.y >= 0.7f)
             //{
@@ -231,17 +231,17 @@ public class SphereStage4 : MonoBehaviour
         if (getValve2)
         {
             this.transform.position = valve2.transform.position;
-            if (Input.GetKey(KeyCode.D) && valve2.transform.localPosition.y >= 0.7f || Input.GetKey("joystick button 8") && valve2.transform.localPosition.y >= 0.7f)
+            if (Input.GetKey(KeyCode.D) && valve2.transform.localPosition.y >= 0.7f || Input.GetAxis("Horizontal") > 0 && valve2.transform.localPosition.y >= 0.7f)
             {
                 valve2.transform.Rotate(0, 0, 0.1f);
-                valve2.transform.localPosition -= new Vector3(0, 0.004f, 0);
-                valveblock2.transform.localPosition -= new Vector3(0, 0.004f, 0);
+                valve2.transform.localPosition -= new Vector3(0, 0.01f, 0);
+                valveblock2.transform.localPosition -= new Vector3(0, 0.01f, 0);
             }
-            if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 10.5f || Input.GetKey("joystick button 9") && valve2.transform.localPosition.y <= 9.6f)
+            if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 10.5f || Input.GetAxis("Horizontal") < 0 && valve2.transform.localPosition.y <= 9.6f)
             {
                 valve2.transform.Rotate(0, 0, -0.1f);
-                valve2.transform.localPosition += new Vector3(0, 0.004f, 0);
-                valveblock2.transform.localPosition += new Vector3(0, 0.004f, 0);
+                valve2.transform.localPosition += new Vector3(0, 0.01f, 0);
+                valveblock2.transform.localPosition += new Vector3(0, 0.01f, 0);
             }
         }
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown("joystick button 3"))
@@ -284,7 +284,7 @@ public class SphereStage4 : MonoBehaviour
             rb.velocity = new Vector3(0, 0, 0);
             rb.useGravity = false;
             this.transform.localPosition = new Vector3(-13.18f, 9.87f, 0);
-            this.transform.localScale -= new Vector3(0.025f, 0.025f, 0.025f);
+            this.transform.localScale -= new Vector3(0.015f, 0.015f, 0.015f);
             if (transform.localScale.x <= 0.0f)
             {
                 transform.localScale = new Vector3(0, 0, 0);

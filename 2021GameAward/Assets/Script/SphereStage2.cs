@@ -182,7 +182,7 @@ public class SphereStage2 : MonoBehaviour
             rb.velocity = new Vector3(0, 0, 0);
             rb.useGravity = false;
             this.transform.localPosition = new Vector3(27.63f, -0.23f, 0);
-            this.transform.localScale -= new Vector3(0.025f, 0.025f, 0.025f);
+            this.transform.localScale -= new Vector3(0.015f, 0.015f, 0.015f);
             if (transform.localScale.x <= 0.0f)
             {
                 transform.localScale = new Vector3(0, 0, 0);

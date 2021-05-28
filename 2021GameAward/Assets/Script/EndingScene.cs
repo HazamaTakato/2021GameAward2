@@ -8,13 +8,13 @@ public class EndingScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown("joystick button 1"))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown("joystick button 0"))
         {
             ChangeScene();
         }
@@ -22,7 +22,12 @@ public class EndingScene : MonoBehaviour
 
     void ChangeScene()
     {
-        //SceneManager.LoadScene("TItleScene");
-        FadeManager.Instance.LoadScene("TItleScene", 0.1f);
+        //SceneManager.LoadScene("SelectScene");
+        FadeManager.Instance.LoadScene("TItleScene", 0.6f);
+    }
+
+    public void EndingSerect()
+    {
+        ChangeScene();
     }
 }
