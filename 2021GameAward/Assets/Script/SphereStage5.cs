@@ -96,23 +96,26 @@ public class SphereStage5 : MonoBehaviour
         if (Input.GetKey(KeyCode.Z) ||
             Input.GetKey("joystick button 0"))
         {
-            changeSize = true;
-            //if (changeGauge.value > 0)
-            //{
-            if (PlayerItem.GetItem)
+            if (PlayerClimb.playerChangebig)
             {
-                keyTimelimit += Time.deltaTime;
-                if (keyTimelimit > 0.5f)
+                changeSize = true;
+                //if (changeGauge.value > 0)
+                //{
+                if (PlayerItem.GetItem)
                 {
-                    PlayerItem.DropItem = true;
-                    keyTimelimit = 0;
+                    keyTimelimit += Time.deltaTime;
+                    if (keyTimelimit > 0.5f)
+                    {
+                        PlayerItem.DropItem = true;
+                        keyTimelimit = 0;
+                    }
                 }
-            }
-            else if (normal.transform.localScale.x <= 2.6f && changeBig)
-            {
-                normal.transform.localScale = normal.transform.localScale + addcutSize;
-                over.transform.localScale = over.transform.localScale + addcutSize;
-                //changeGauge.value -= 0.01f;
+                else if (normal.transform.localScale.x <= 2.6f && changeBig)
+                {
+                    normal.transform.localScale = normal.transform.localScale + addcutSize;
+                    over.transform.localScale = over.transform.localScale + addcutSize;
+                    //changeGauge.value -= 0.01f;
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.C))
@@ -290,7 +293,7 @@ public class SphereStage5 : MonoBehaviour
         }
         if (!getButton3)
         {
-            if(button3block.transform.localPosition.y <= -0.029f)
+            if (button3block.transform.localPosition.y <= -0.029f)
             {
                 button3block.transform.localPosition += new Vector3(0, 0.005f, 0);
             }
@@ -320,7 +323,7 @@ public class SphereStage5 : MonoBehaviour
             getButton = false;
             button.transform.localPosition = new Vector3(0, 0, 10);
         }
-        if(other.tag=="button3")
+        if (other.tag == "button3")
         {
             getButton3 = false;
             button3.transform.localPosition = new Vector3(0, 0, 10);
@@ -340,9 +343,9 @@ public class SphereStage5 : MonoBehaviour
         if (other.tag == "button2")
         {
             getButton = true;
-            button.transform.localPosition = new Vector3(0.5f,0, 10);
+            button.transform.localPosition = new Vector3(0.5f, 0, 10);
         }
-        if(other.tag=="button")
+        if (other.tag == "button")
         {
             getButton2 = true;
             button2.SetActive(false);

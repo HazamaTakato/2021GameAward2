@@ -16,7 +16,7 @@ public class SphereStage2 : MonoBehaviour
     Vector3 downaddcutSize;
     public bool hitflag;
     public bool changeSize;
-   // public GameObject fallblock;
+    // public GameObject fallblock;
     public GameObject lever;
     public GameObject leverblock;
     public Slider changeGauge;
@@ -76,25 +76,27 @@ public class SphereStage2 : MonoBehaviour
         if (Input.GetKey(KeyCode.Z) ||
             Input.GetKey("joystick button 0"))
         {
-            changeSize = true;
-            //if (changeGauge.value > 0)
-            //{
-            if (PlayerItem.GetItem)
+            if (PlayerClimb.playerChangebig)
             {
-                keyTimelimit += Time.deltaTime;
-                if (keyTimelimit > 0.5f)
+                changeSize = true;
+                //if (changeGauge.value > 0)
+                //{
+                if (PlayerItem.GetItem)
                 {
-                    PlayerItem.DropItem = true;
-                    keyTimelimit = 0;
+                    keyTimelimit += Time.deltaTime;
+                    if (keyTimelimit > 0.5f)
+                    {
+                        PlayerItem.DropItem = true;
+                        keyTimelimit = 0;
+                    }
+                }
+                else if (normal.transform.localScale.x <= 2.6f && changeBig)
+                {
+                    normal.transform.localScale = normal.transform.localScale + addcutSize;
+                    over.transform.localScale = over.transform.localScale + addcutSize;
+                    //changeGauge.value -= 0.01f;
                 }
             }
-            else if (normal.transform.localScale.x <= 2.6f && changeBig)
-            {
-                normal.transform.localScale = normal.transform.localScale + addcutSize;
-                over.transform.localScale = over.transform.localScale + addcutSize;
-                //changeGauge.value -= 0.01f;
-            }
-            //}
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
@@ -192,7 +194,7 @@ public class SphereStage2 : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -213,11 +215,11 @@ public class SphereStage2 : MonoBehaviour
             //SceneManager.LoadScene("GameScene4");
             FadeManager.Instance.LoadScene("GameScene4", 1.0f);
         }
-        if(other.tag=="lever")
+        if (other.tag == "lever")
         {
             leverblock.SetActive(false);
             //leverblock2.SetActive(false);
-            lever.transform.localRotation = new Quaternion(0,0,3.5f,1);
+            lever.transform.localRotation = new Quaternion(0, 0, 3.5f, 1);
             leverON = true;
         }
 

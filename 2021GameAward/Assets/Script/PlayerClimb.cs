@@ -25,6 +25,8 @@ public class PlayerClimb : MonoBehaviour
     bool onAssist;
     bool sizecheck;
 
+    public static bool playerChangebig;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,7 @@ public class PlayerClimb : MonoBehaviour
         overPlayer.GetComponent<GameObject>();
         rigid.GetComponent<Rigidbody>();
         playerSize = overPlayer.transform.localScale.x;
+        playerChangebig = true;
     }
 
     // Update is called once per frame
@@ -73,6 +76,12 @@ public class PlayerClimb : MonoBehaviour
         Debug.DrawLine(topray.origin, topray.origin + topray.direction * distanceTopray, Color.yellow);
         Debug.DrawLine(underRay.origin, underRay.origin + underRay.direction * underDistance, Color.yellow);
 
+        if (Physics.Raycast(topray, out hit, distanceTopray))
+            //bool型でプレイヤーのサイズ変更許可入れる場所
+            playerChangebig = false;
+        else
+            playerChangebig = true;
+
         if (Physics.Raycast(underRay, out hit, underDistance))
         {
             if (hit.collider.tag == "Item")
@@ -87,11 +96,6 @@ public class PlayerClimb : MonoBehaviour
             }
         }
 
-        //if (Physics.Raycast(topray, out hit, distanceTopray))
-        //    //
-        //    //bool型でプレイヤーのサイズ変更許可入れる場所
-        //    //
-        //    return;
         sizecheck = false;
         if (!Physics.Raycast(frontRay, out hit, distance))
         {

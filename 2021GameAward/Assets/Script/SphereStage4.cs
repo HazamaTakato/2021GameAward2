@@ -91,23 +91,26 @@ public class SphereStage4 : MonoBehaviour
         if (Input.GetKey(KeyCode.Z) ||
             Input.GetKey("joystick button 0"))
         {
-            changeSize = true;
-            //if (changeGauge.value > 0)
-            //{
-            if (PlayerItem.GetItem)
+            if (PlayerClimb.playerChangebig)
             {
-                keyTimelimit += Time.deltaTime;
-                if (keyTimelimit > 0.5f)
+                changeSize = true;
+                //if (changeGauge.value > 0)
+                //{
+                if (PlayerItem.GetItem)
                 {
-                    PlayerItem.DropItem = true;
-                    keyTimelimit = 0;
+                    keyTimelimit += Time.deltaTime;
+                    if (keyTimelimit > 0.5f)
+                    {
+                        PlayerItem.DropItem = true;
+                        keyTimelimit = 0;
+                    }
                 }
-            }
-            else if (normal.transform.localScale.x <= 2.6f && changeBig)
-            {
-                normal.transform.localScale = normal.transform.localScale + addcutSize;
-                over.transform.localScale = over.transform.localScale + addcutSize;
-                //changeGauge.value -= 0.01f;
+                else if (normal.transform.localScale.x <= 2.6f && changeBig)
+                {
+                    normal.transform.localScale = normal.transform.localScale + addcutSize;
+                    over.transform.localScale = over.transform.localScale + addcutSize;
+                    //changeGauge.value -= 0.01f;
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.C))
@@ -270,7 +273,7 @@ public class SphereStage4 : MonoBehaviour
             //    buttonblock.transform.localPosition += new Vector3(0, 0.0005f, 0);
             //}
         }
-        if(getButton2)
+        if (getButton2)
         { }
         if (!getButton2)
         { }
