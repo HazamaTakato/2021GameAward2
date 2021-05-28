@@ -14,6 +14,17 @@ public class hideMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetMouseButtonDown(0)&&
+            Cursor.lockState!=CursorLockMode.Locked)
+        {
+            Onclick();
+        }
+    }
+    void Onclick()
+    {
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            return;
+        }
     }
 }
