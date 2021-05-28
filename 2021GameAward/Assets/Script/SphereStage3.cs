@@ -224,13 +224,13 @@ public class SphereStage3 : MonoBehaviour
             if (Input.GetKey(KeyCode.D) && valve2.transform.localPosition.y >= 0.7f || Input.GetAxis("Horizontal") > 0 && valve2.transform.localPosition.y >= 0.7f)
             {
                 valve2.transform.Rotate(0, 0, 0.1f);
-                valve2.transform.localPosition -= new Vector3(0, 0.004f, 0);
+                valve2.transform.localPosition -= new Vector3(0, 0.01f, 0);
                 valveblock2.transform.localPosition -= new Vector3(0, 0.01f, 0);
             }
             if (Input.GetKey(KeyCode.A) && valve2.transform.localPosition.y <= 9.6f || Input.GetAxis("Horizontal") < 0 && valve2.transform.localPosition.y <= 9.6f)
             {
                 valve2.transform.Rotate(0, 0, -0.1f);
-                valve2.transform.localPosition += new Vector3(0, 0.004f, 0);
+                valve2.transform.localPosition += new Vector3(0, 0.01f, 0);
                 valveblock2.transform.localPosition += new Vector3(0, 0.01f, 0);
             }
         }
