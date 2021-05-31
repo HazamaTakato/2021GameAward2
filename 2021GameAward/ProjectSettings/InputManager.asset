@@ -169,15 +169,15 @@ InputManager:
     m_Name: right
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: w
-    positiveButton: s
+    negativeButton: s
+    positiveButton: w
     altNegativeButton: down
     altPositiveButton: up
     gravity: 0
     dead: 0.19
     sensitivity: 1
     snap: 0
-    invert: 0
+    invert: 1
     type: 2
     axis: 1
     joyNum: 0
